@@ -1,0 +1,195 @@
+/*      FUENTES         */
+@font-face {
+    font-family: Haloha;
+    src: url('../fonts/Haloha/Haloha.ttf'), url('../fonts/Haloha/Haloha.otf'), url('../fonts/Haloha/Haloha.woff'),
+    url('../fonts/Haloha/Haloha.woff2');
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+/*      CONTENEDOR        */
+.container 
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+
+    /*      CABECERA        */
+
+    .header
+    {
+        background: #fff;
+        margin: 10px;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+        .header__logo-container
+        {
+            align-self: center;
+            font-family: 'Haloha';
+            font-size: 30px;
+            color: #e5815d;
+        }
+
+            .logo__h1
+            {
+                display: inline;
+                position: relative;
+                z-index: 200;
+            }
+
+            .logo__h6
+            {
+                display: inline;
+                position: relative;
+                top: -30px;
+                color: #40a983;
+            }
+
+            .header__logo-container img
+            {
+                position: absolute;
+                left: -12px;
+                top: -12px;
+                width: 165px;
+            }
+
+
+
+    /*          CUERPO DE LA PÁGINA         */
+
+    .main
+    {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        position: relative;
+        }
+
+        .main__nav
+        {
+            background: #fff;
+            flex-basis: 30px;
+            position: relative;
+            z-index: 0;
+        }
+
+        .nav__btn-container, .nav_networks-container
+        {
+            position: sticky;
+            top: 50%;
+            padding: 5px;
+        }
+
+        .nav_networks-container
+        {
+            border-right: 5px solid #e5815d;
+            top: 45%;
+            display: grid;
+            grid-template-columns: 45px;
+            grid-template-rows: repeat(3, max-content);
+            align-content: center;
+            justify-items: center;
+            gap: 30px;
+        }
+
+        .nav__networks
+        {
+            color: #e5815d;
+            text-decoration: none;
+        }
+
+        .nav__btn
+        {
+            transform: rotate(270deg);
+            background: transparent;
+            border: none;
+            font-size: 20px;
+            color: #e5815d;
+            cursor: pointer;
+        }
+
+        .nav
+        {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #fff;
+            border-right: 5px solid #e5815d;
+            overflow-x: hidden;
+            transition: 0.4s;
+            padding-top: 60px;
+        }
+
+            .btn__close
+            {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-size: 25px;
+                color: #40a983;
+            }
+
+        .btn__close:hover
+        {
+            color: #BF8069;
+        }
+        
+        .btn__close:active
+        {
+            color: #7a5142;
+        }
+            
+        .nav__networks:hover
+        {
+            color: #BF8069;
+            cursor: pointer;
+        }
+
+        .nav__networks:active
+        {
+            color: #7a5142;
+            cursor: pointer;
+        }
+        .nav__btn:hover
+        {
+            color: #BF8069;
+            cursor: pointer;
+        }
+
+        .nav__btn:active
+        {
+            color: #7a5142;
+            cursor: pointer;
+        }
+
+    .main__section
+    {
+        background: #bdf7e2;
+        flex-grow: 1;
+        padding: 20px;
+    }
+
+
+
+    /*      PIE DE PÁGINA       */
+    .footer
+    {
+        background: #fff;
+        height: 60px;
+    }
