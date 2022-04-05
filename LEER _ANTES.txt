@@ -1,0 +1,18 @@
+
+Página de KiteSurf por Paula Moreno Hermoso
+
+
+Aclaraciones:
+	-	Por ahora estoy realizando el código en el archivo practica.html y pruebas.css.
+
+	-	He creado un menú lateral que se abre cuando haces clic en 'Menu', sin embargo, 
+		no está acabado. Mi idea es poner una zona para el logo, una barra de búsqueda,
+		opciones del menú y datos relacionados con la página como pueden ser el correo
+		o el número de teléfono.
+
+	-	Aún no he terminado con el pie de página.
+
+
+NOTA: 
+	Incluyo un vídeo de cómo se encuentra la página actualmente.
+	Siento no haber avanzado mucho más, me cuesta un poco.
