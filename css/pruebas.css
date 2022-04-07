@@ -20,6 +20,11 @@
 }
 
 
+
+
+
+
+
     /*      CABECERA        */
 
     .header
@@ -69,6 +74,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /*          CUERPO DE LA PÁGINA         */
 
     .main
@@ -84,7 +108,6 @@
             background: #fff;
             flex-basis: 30px;
             position: relative;
-            z-index: 0;
         }
 
         .nav__btn-container, .nav_networks-container
@@ -187,9 +210,72 @@
 
 
 
+
+
+
+
+
     /*      PIE DE PÁGINA       */
     .footer
     {
         background: #fff;
         height: 60px;
     }
+        .footer i
+        {
+            color: #e5815d;
+            position: absolute;
+            bottom: 31px;
+            right: 70px;
+            cursor: pointer;
+        }
+            
+            .footer i:hover
+            {
+                color: #BF8069;
+                cursor: pointer;
+            }
+
+            .footer i:active
+            {
+                color: #7a5142;
+                cursor: pointer;
+            }
+
+        .footer__ul
+        {
+            list-style: none;
+        }
+
+            .footer__ul-container-li
+            {
+                text-align: center;
+            }
+
+            .ul__li
+            {
+                display: inline-block;
+                margin: 10px;
+            }
+
+            .ul__li a
+            {
+                color: #e5815d;
+                text-decoration: none;
+            }
+
+            .ul__li:nth-child(odd) a
+            {
+                color: #40a983;
+            }
+        
+        .footer__div
+        {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+            .div__name
+            {
+                color: #7a5142;
+                font-weight: lighter;
+            }
