@@ -46,11 +46,15 @@
             align-self: center;
             font-family: 'Haloha';
             font-size: 30px;
-            color: #e5815d;
         }
+            .header__logo-container a
+            {
+                text-decoration: none;
+            }
 
             .logo__h1
             {
+                color: #e5815d;
                 display: inline;
                 position: relative;
                 z-index: 200;
@@ -145,6 +149,7 @@
             cursor: pointer;
         }
 
+        /*MENU LATERAL*/
         .nav
         {
             height: 100%;
@@ -168,6 +173,20 @@
                 color: #40a983;
             }
 
+            .nav-logo img
+            {
+                display: block;
+                background-color: #40a983;
+                width: 150px;
+                height: 150px;
+                margin: auto;
+                border-radius: 50%;
+                object-fit: contain; /*Provisional*/
+            }
+
+        /*Pseudo-clases utilizadas en los aside del main*/
+
+        /*Botón que cierra el menu abierto*/
         .btn__close:hover
         {
             color: #BF8069;
@@ -177,7 +196,8 @@
         {
             color: #7a5142;
         }
-            
+        
+        /*Para las redes sociales*/
         .nav__networks:hover
         {
             color: #BF8069;
