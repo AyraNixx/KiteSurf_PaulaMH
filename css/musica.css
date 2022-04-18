@@ -1,0 +1,75 @@
+.music-container
+{
+    background: #d2f6e9c9;
+    color: #fff;
+    display: inline-flex;
+    flex-direction: column-reverse;
+    width: auto;
+    border-radius: 200px;
+    position: absolute;
+    bottom: 100px;
+}
+.player-logo
+{
+    padding: 5px;
+    width: 30px;
+    background: #ef9f82;
+    border-radius: 50%;  
+}
+
+/*Utilizamos keyframes para animar el div player-logo para que gire constantemente.
+    Es decir, que vaya de 0 a 360 grados en loop*/
+@keyframes rotate {
+    from
+    {
+        transform: rotate(0deg);
+    }
+
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+.player-logo div
+{
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 50px; 
+    /*Con animate, le indicamos la duracion de la animacion y cuánto queremos que esta dure*/
+    animation: 3s rotate linear infinite; 
+    transform-origin: 50% 50%;
+}
+
+.player-options
+{
+    display: none;
+}
+.player-options i
+{
+    width: 15px;
+    height: 15px;
+    padding: 8px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    text-align: center;
+    color: #fcab8e;
+    text-shadow: 2px 2px 2px #88d6ba;
+}
+
+i:not(.player-logo i):hover
+{
+    color: #cf6640;
+}
+
+i:not(.player-logo i):active
+{
+    background: #64cda786;
+    color: #fff;
+    text-shadow: none;
+}
+
+.music-container:hover > .player-options
+{
+    display: inline;
+    margin: auto;
+}
