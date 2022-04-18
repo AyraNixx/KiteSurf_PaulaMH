@@ -5,14 +5,16 @@
     display: inline-flex;
     flex-direction: column-reverse;
     width: auto;
+    margin: 10px;
     border-radius: 200px;
     position: absolute;
-    bottom: 100px;
+    bottom: 0;
+    right: 60px;
 }
 .player-logo
 {
     padding: 5px;
-    width: 30px;
+    width: 40px;
     background: #ef9f82;
     border-radius: 50%;  
 }
@@ -46,10 +48,11 @@
 }
 .player-options i
 {
-    width: 15px;
-    height: 15px;
-    padding: 8px;
+    width: 20px;
+    height: 20px;
+    padding-top: 2px;
     border-radius: 50%;
+    margin-top: 8px;
     margin-bottom: 8px;
     text-align: center;
     color: #fcab8e;
