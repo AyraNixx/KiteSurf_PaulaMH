@@ -1,7 +1,9 @@
 //Array con las canciones disponibles
 var songs = [
     "../music/Cake_by_the_Ocean.mp3",
-    "../music/This_girl.mp3"
+    "../music/This_girl.mp3",
+    "../music/The_Nights.mp3",
+    "../music/Sunboat.mp3"
 ];
 
 //Posicion de la cancion actual 
