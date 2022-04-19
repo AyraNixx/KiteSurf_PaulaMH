@@ -34,4 +34,6 @@ $("#btn_previous").click(function(){
         i = songs.length - 1;
         $("#player").attr("src", songs[i]);
     }
-})
+});
+
+

@@ -59,12 +59,12 @@
     text-shadow: 2px 2px 2px #88d6ba;
 }
 
-i:not(.player-logo i):hover
+.player-options i:hover
 {
     color: #cf6640;
 }
 
-i:not(.player-logo i):active
+.player-options i:active
 {
     background: #64cda786;
     color: #fff;
