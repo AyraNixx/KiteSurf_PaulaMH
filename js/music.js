@@ -1,5 +1,6 @@
 //Array con las canciones disponibles
 var songs = [
+    "../music/Grabación.mp3",
     "../music/Cake_by_the_Ocean.mp3",
     "../music/This_girl.mp3",
     "../music/The_Nights.mp3",
@@ -32,6 +33,18 @@ $("#btn_previous").click(function(){
         $("#player").attr("src", songs[i]);
     }else{
         i = songs.length - 1;
+        $("#player").attr("src", songs[i]);
+    }
+});
+
+document.getElementById("player").addEventListener("ended", function(){
+
+    if((i + 1) <= songs.length - 1)
+    {
+        i++;
+        $("#player").attr("src", songs[i]);
+    }else{
+        i = 0;
         $("#player").attr("src", songs[i]);
     }
 });
