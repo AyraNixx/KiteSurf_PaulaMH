@@ -1,6 +1,5 @@
 $("#nav__menu").click(function () {
-    $(".nav-showed").width(450).css("z-index", 300);
-    $(".header__logo-container" > img).css("opacity", 1);
+    $(".nav-showed").width(370).css("z-index", 300);
 });
 
 $(".btn__close").click(function () {
