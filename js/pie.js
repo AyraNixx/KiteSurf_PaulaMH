@@ -1,4 +1,4 @@
-$(".footer__slideup").click(function () {
+/*$(".footer__slideup").click(function () {
     $(".footer").css("height", 200)
 
     $(".footer__slideup").attr("class", "fa-solid fa-circle-chevron-down footer__down");
@@ -12,5 +12,8 @@ alert("ali")
 
     $(".footer").css("height", "auto");
 
-});
+});*/
 
+$("#btn__footer").click(function() {
+    $(".footer__main-content").toggle(50);
+  });
