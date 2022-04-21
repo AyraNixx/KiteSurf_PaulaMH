@@ -1,6 +1,5 @@
 //Array con las canciones disponibles
 var songs = [
-    "../music/Grabación.mp3",
     "../music/Cake_by_the_Ocean.mp3",
     "../music/This_girl.mp3",
     "../music/The_Nights.mp3",
