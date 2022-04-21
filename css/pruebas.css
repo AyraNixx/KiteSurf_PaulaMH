@@ -195,11 +195,11 @@
 
                 .search__input
                 {
-                    height: 50px;
+                    height: 30px;
                     width: 100%;
                     padding-left: 1px;
                     margin: auto;
-                    font-size: 18px;
+                    font-size: 15px;
                     letter-spacing: 3px;
                     border: none;
                     border-bottom: 2px solid #e5815d;
@@ -271,7 +271,7 @@
                 display: inline-block;
                 width: 100%;
                 color: #14604483;
-                transition: all ease-out .4s;
+                transition: all ease-out 1.4s;
             }
 
             .nav__li a:hover 
@@ -297,6 +297,34 @@
                 background-image: linear-gradient(to right, #f5a78a 10%, #f59fcb, #5de3b2);
                 opacity: .4;
             }
+
+            .info__ul
+            {
+                list-style-type: none;
+                margin: 20px 37px;
+            }
+
+            .info__ul-li
+            {
+                padding: 5px;
+                padding-left: 0;
+                margin-bottom: 10px;
+                font-size: 15px;
+            }
+
+            .info__ul-li a
+            {
+                text-decoration: none;
+                color: #40a983;
+                font-size: 13px;
+            }
+
+            .info__ul-li i
+            {
+                color: #14604483;
+                cursor:context-menu;
+            }
+
 
         /*Pseudo-clases utilizadas en los aside del main*/
 
@@ -361,7 +389,7 @@
         {
             color: #e5815d;
             position: relative;
-            top: 28px;
+            top: 15px;
             left: calc(100vw - 110px);
             cursor: pointer;
             font-size: 15px;
@@ -381,7 +409,7 @@
 
         .footer__ul
         {
-            list-style: none;
+            list-style-type: none;
         }
 
             .footer__ul-container-li
@@ -393,6 +421,7 @@
             {
                 display: inline-block;
                 margin: 10px;
+                margin-top: 0;
             }
 
             .ul__li a
@@ -405,6 +434,22 @@
             {
                 color: #40a983;
             }
+
+            .ul__li:not(.ul__li:last-of-type):after
+            {
+                content: "·";
+                font-size: 30px;
+                position: relative;
+                line-height: 0;
+                top: 5.5px;
+                left: 12.5px;
+                color: #7a5142;
+            }
+        
+        .footer__main
+        {
+            background: red;
+        }
         
         .footer__div
         {
