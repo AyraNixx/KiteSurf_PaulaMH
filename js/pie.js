@@ -14,6 +14,15 @@ alert("ali")
 
 });*/
 
+
+
 $("#btn__footer").click(function() {
-    $(".footer__main-content").toggle(50);
+    $(".footer__main-content").toggle(50).css("display", "flex");
+
+    if($("#btn__footer").hasClass("fa-circle-chevron-up"))
+    {
+        $("#btn__footer").removeClass("fa-circle-chevron-up").addClass('fa-circle-chevron-down');
+    }else{
+        $("#btn__footer").removeClass("fa-circle-chevron-down").addClass('fa-circle-chevron-up');
+    }
   });

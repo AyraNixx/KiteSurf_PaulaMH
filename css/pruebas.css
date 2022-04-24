@@ -388,7 +388,7 @@
         flex-direction: column;
         flex-wrap: wrap;
     }
-        .footer i
+        #btn__footer
         {
             width: 10px;
             color: #e5815d;
@@ -398,18 +398,6 @@
             cursor: pointer;
             font-size: 15px;
         }
-            
-            .footer i:hover
-            {
-                color: #BF8069;
-                cursor: pointer;
-            }
-
-            .footer i:active
-            {
-                color: #7a5142;
-                cursor: pointer;
-            }
 
         .footer__ul
         {
@@ -424,8 +412,7 @@
             .ul__li
             {
                 display: inline-block;
-                margin: 10px;
-                margin-top: 0;
+                margin: 0 10px 10px;
             }
 
             .ul__li a
@@ -452,43 +439,47 @@
 
         .footer__main-content
         {
-            padding: 40px;
-            padding-top: 20px;
+            padding: 40px 0;
             display: flex;
-            width: 100%;
+            width: calc(100% - 120px);
+            margin: 10px auto;
+            position: relative;
         }
 
         .footer__main-content::after, .footer__main-content::before
         {
             content: '';
-            position: fixed;
-            width: 85%;
+            position: absolute;
+            width: 100%;
             height: .1em;
-            bottom: 50px ;
+            bottom: 0;
             left: 0;
             right: 0;
-            margin: auto;
             background-image: linear-gradient(to right, #f5a78a 10%, #f59fcb, #5de3b2);
             opacity: .4;
         }
 
         .footer__main-content::before
         {
-            bottom: calc();
+            top: 0;
         }
 
             .footer__main-content_div1
             {
-                display: flex;
-                flex-direction: column;
+                text-align: justify;
+                width: 60%;
+                /*Se utiliza hyphens para separar las palabras con guiones. Como no me gusta
+                    como se ve en este caso pues no lo voy a poner pero así ya sabemos algo 
+                    más
+                hyphens: auto;*/
+                
             }
 
                 .footer__logo-container
                 {
-                    align-self: center;
                     font-family: 'Haloha';
                     font-size: 20px;
-                    margin-left:23px;
+                    width: 115px;
                 }
 
 
@@ -507,36 +498,66 @@
                         color: #40a983;
                     }
 
-                
-                .footer__aside
-                {
-                    margin-top: 20px;
-                }   
-
-                .footer__aside-ul
-                {
-                    list-style: none;
-                    display: flex;
-                    flex-wrap: wrap;
-                }
-
-                    .footer__aside-li
+                    .footer__aside
                     {
-                        margin-right: 5px;
-                    }
+                        display: flex;
+                        width: 100%;
+                        position: relative;
+                    }   
 
-                    .footer__aside-li:first-of-type
-                    {
-                        margin-left: 22px;
-                    }
+                        .footer-text
+                        {
+                            font-size: 12px;
+                            width: 50%;
+                            font-style: normal;
+                            color: #146044ba;
+                            margin-top: 10px;
+                        }
+
+                        .footer__aside h3
+                        {
+                            font-family: 'Haloha';
+                            width: fit-content;
+                            height: fit-content;
+                            position: absolute;
+                            top: -22px;
+                            left: 57%;
+                        }
+
+                        .footer__aside-ul
+                        {
+                            list-style: none;  
+                            width: 50%;                 
+                        }
+
+                            .footer__aside-li
+                            {
+                                padding: 5px;
+                                margin-left: 20px;
+                                font-size: 12px;
+
+                            }
+                                .footer__aside-li a
+                                {
+                                    text-decoration: none;
+                                    color: #40a983;
+                                    font-size: 13px;
+                                }
+                                
+                                .footer__aside-li i
+                                {
+                                    color: #146044ba;
+                                    cursor:context-menu;
+                                }
+
 
             .footer__main-content_div2
             {
                 display: flex;
                 flex-direction: column;
-                flex-grow: 1;
                 background-color: red;
-                margin-right: 17px ;
+                margin-left: 10px ;
+                width: 40%;
             }
 
         .footer__div
