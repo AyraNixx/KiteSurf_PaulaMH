@@ -440,10 +440,11 @@
         .footer__main-content
         {
             padding: 40px 0;
-            display: flex;
+            display: none;
             width: calc(100% - 120px);
             margin: 10px auto;
             position: relative;
+            flex-wrap: wrap;
         }
 
         .footer__main-content::after, .footer__main-content::before
@@ -464,101 +465,143 @@
             top: 0;
         }
 
+            /*      PRIMER DIV DEL FOOTER MAIN      */
             .footer__main-content_div1
             {
+                width: 30%;
                 text-align: justify;
-                width: 60%;
-                /*Se utiliza hyphens para separar las palabras con guiones. Como no me gusta
-                    como se ve en este caso pues no lo voy a poner pero así ya sabemos algo 
-                    más
-                hyphens: auto;*/
-                
             }
+                .footer-text
+                {
+                    font-style: normal;
+                    font-size: 12px;
+                    color: #146044ba;
+                    width: 50%;                                     
+                }
 
                 .footer__logo-container
                 {
+                    position: relative;
                     font-family: 'Haloha';
                     font-size: 20px;
-                    width: 115px;
                 }
-
-
-                    .footer__logo
+    
+                    .footer__logo, .footer__h3
                     {
                         color: #e5815d;
                         display: inline;
                         position: relative;
                     }
-
+    
                     .footer__logo-container .logo__h6
                     {
                         position: relative;
                         top: -13px;
-                        left: -10px;
                         color: #40a983;
                     }
 
-                    .footer__aside
-                    {
-                        display: flex;
-                        width: 100%;
-                        position: relative;
-                    }   
 
-                        .footer-text
-                        {
-                            font-size: 12px;
-                            width: 50%;
-                            font-style: normal;
-                            color: #146044ba;
-                            margin-top: 10px;
-                        }
+            .footer__h3
+            {
+                font-family: "Haloha";
+                font-size: 18px;
+            }
+        
 
-                        .footer__aside h3
-                        {
-                            font-family: 'Haloha';
-                            width: fit-content;
-                            height: fit-content;
-                            position: absolute;
-                            top: -22px;
-                            left: 57%;
-                        }
-
-                        .footer__aside-ul
-                        {
-                            list-style: none;  
-                            width: 50%;                 
-                        }
-
-                            .footer__aside-li
-                            {
-                                padding: 5px;
-                                margin-left: 20px;
-                                font-size: 12px;
-
-                            }
-                                .footer__aside-li a
-                                {
-                                    text-decoration: none;
-                                    color: #40a983;
-                                    font-size: 13px;
-                                }
-                                
-                                .footer__aside-li i
-                                {
-                                    color: #146044ba;
-                                    cursor:context-menu;
-                                }
-
-
-            .footer__main-content_div2
+            /*      FOOTER MAIN SEGUNDO DIV     */
+            .footer__main-content-div2
             {
                 display: flex;
                 flex-direction: column;
-                background-color: red;
-                margin-left: 10px ;
+                position: relative;
                 width: 40%;
+                flex-grow: 1;
+                margin-left: 20px;
             }
+
+                .footer__aside-ul
+                {
+                    list-style: none;    
+                    margin-top: 5px;        
+                }
+
+                    .footer__aside-li
+                    {
+                        padding: 5px;
+                        font-size: 12px;
+                    }
+                        .footer__aside-li a
+                        {
+                            text-decoration: none;
+                            color: #40a983;
+                        }
+                            
+                        .footer__aside-li i
+                        {
+                            color: #146044ba;
+                            cursor:context-menu;
+                        }
+
+                .footer__main-content-div2 .footer__h3
+                {
+                    margin-left: 6px;
+                }
+
+                .footer__main-content-div3::before
+                {
+                    content: " ";
+                    height: 100%;
+                    width: .08em;
+                    position: absolute;
+                    left: -20px;
+                    background: linear-gradient(to bottom, #f5a78a 10%, #f59fcb, #5de3b2);
+                    opacity: .4;
+                }
+
+                /*      TERCER DIV DEL FOOTER MAIN      */
+                .footer__main-content-div3
+                {
+                    width: 20%;
+                    position: relative;
+                    top: -5px;
+                }
+
+                    .footer__email-container
+                    {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 5px;
+                    }
+
+                        .footer__email
+                        {
+                            margin-bottom: 10px;
+                            padding: 10px 5px;
+                            color: #14604483;
+                            outline: none;
+                            border: 1px solid #14604483;
+                        }
+
+                        .footer__email-btn
+                        {
+                            padding: 10px 5px;                    
+                            margin-bottom: 10px;
+                            color: #fff;
+                            background: #f5a78a;
+                            cursor: pointer;
+                            border: none;
+                        }
+
+                        .footer__email::placeholder
+                        {
+                            color: #14604483;
+                        }
+
+                        .footer__email:focus
+                        {
+                            background: #ecfff8;
+                        }
+
 
         .footer__div
         {
