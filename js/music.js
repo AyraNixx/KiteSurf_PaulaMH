@@ -49,3 +49,12 @@ document.getElementById("player").addEventListener("ended", function(){
 });
 
 
+$(window).on("scroll", function () {
+    if( $(window).scrollTop() > ($(".footer").offset().top - (($(window).height() - $(".footer").height()))))
+    {
+        $(".music-container").css("bottom", $(".footer").height() + 15);
+    }else{
+        $(".music-container").css("bottom", "0");
+    }
+    
+});

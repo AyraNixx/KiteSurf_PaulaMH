@@ -7,7 +7,7 @@
     width: auto;
     margin: 10px;
     border-radius: 200px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 60px;
 }
