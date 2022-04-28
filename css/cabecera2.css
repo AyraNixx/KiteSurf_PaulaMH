@@ -1,0 +1,59 @@
+.thumbnail__container
+{
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+    .thumbnail__h1
+    {
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: .3em;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        color: #e5815d;
+    }
+
+    .thumbnail__content
+    {
+        
+        background-color: rgba(249, 238, 238, 0.348);
+        display: flex;
+        /*Utilizamos flex-flow que mezcla el flex-direction y el flex-wrap*/
+        flex-flow: row wrap;
+        align-items: start;
+        border: 5px solid #e5815d;
+    }
+
+        .thumbnail__video
+        {
+            position: relative;
+            margin: 40px;
+            z-index: 50;
+        }
+
+        .thumbnail__video video
+        {
+            width: 700px;
+            position: relative;
+            outline: 10px double white;
+            border-radius: 10px;
+            box-shadow: 25px 30px 30px -5px rgba(0, 0, 0, 0.25);
+            z-index: 50;
+        }
+
+
+        @media screen and (max-width: 1179px) {
+            .thumbnail__video
+            {
+                margin-bottom: 50px;
+                width: 100%;
+            }
+
+            .thumbnail__video video
+            {
+                width: 100%;
+            }
+        }
