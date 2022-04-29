@@ -6,20 +6,37 @@
     margin: 0 auto;
 }
 
-    .thumbnail__h1
+    .thumbnail__h1, .thumbnail__h3, .thumbnail__h4
     {
-        font-size: 12px;
-        font-weight: 500;
+        font-size: 14px;
+        font-weight: 600;
         letter-spacing: .3em;
         margin-bottom: 12px;
         text-transform: uppercase;
         color: #e5815d;
     }
 
-    .thumbnail__content
+    .thumbnail__h3
+    {
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .thumbnail__h4
+    {
+        font-weight: 500;
+        font-size: 10px;
+        color: #14604483;
+    }
+
+
+    .thumbnail__middle
     {
         
-        background-color: rgba(249, 238, 238, 0.348);
+        background-color: rgba(249, 238, 238, 0.326);
+        /*No sé si dejaré las olas del fondo porque no me convencen del todo. ya veré*/
+        /*background: url('../img/olas.png');
+        background-size: 100px;*/
         display: flex;
         /*Utilizamos flex-flow que mezcla el flex-direction y el flex-wrap*/
         flex-flow: row wrap;
@@ -27,33 +44,211 @@
         border: 5px solid #e5815d;
     }
 
+        .hojas-thumbnail
+        {
+            transform: scaleX(-1);
+            position: absolute;
+            right: 0;
+            width: 200px;
+            
+        }
+
         .thumbnail__video
         {
-            position: relative;
+            position: absolute;
             margin: 40px;
             z-index: 50;
         }
 
-        .thumbnail__video video
+            .thumbnail__video video
+            {
+                width: 700px;
+                position: relative;
+                outline: 10px double white;
+                border-radius: 10px;
+                box-shadow: 25px 30px 30px -5px rgba(0, 0, 0, 0.25);
+                z-index: 50;
+            }
+        .thumbnail__side
         {
-            width: 700px;
+            padding-left: 10px;
+            width: 35%;
+            padding-bottom: 30px;
+            margin: 40px 0 40px auto;
+            overflow: hidden;
             position: relative;
-            outline: 10px double white;
-            border-radius: 10px;
-            box-shadow: 25px 30px 30px -5px rgba(0, 0, 0, 0.25);
-            z-index: 50;
+        }
+            .thumbnail__side img
+            {
+                width: 120px;
+                max-width: 100%;
+                margin: 0 0 25px;
+                border: 1px solid #146044b6 ;
+                border-radius: 50%;
+                background-color: #ffffff85;
+                padding: 5px;
+            }
+
+            .thumbnail__side .thumbnail__h3 a 
+            {
+                text-decoration: none;
+                color: #e5815d;
+            }
+            .thumbnail__side .thumbnail__h3 a:hover
+            {
+                color: #BF8069;
+            }
+
+            .thumbnail__side .thumbnail__h3 a:active
+            {
+                color: #7a5142;
+            }
+            
+            .thumbnail__side .thumbnail__h4
+            {
+                letter-spacing: .8px;
+                text-align: justify;
+                margin: 0;
+            }
+
+            .thumbnail__side .thumbnail__h4::after
+            {
+                content: " - ";
+                display: block;
+                font-size: 15px;
+                font-weight: 100;
+            }
+
+            .thumbnail__span
+            {
+                color: #09412c;
+                letter-spacing: .8px;
+                font-size: 12px;
+            }
+
+        .thumbnail__introduction-responsive
+        {
+            display: none;
+            width: 43.188%;
+            margin-right: 0;
+            margin-left: auto;
+            padding-left: 40px;
+            padding-right: 30px;
         }
 
+            .thumbnail__introduction-responsive p
+            {
+                font-style: italic;
+                font-size: 13px;
+                letter-spacing: .8px;
+                color: #09412c;
+            }
+        
+        
+        .thumbnail__end
+        {
+            width: 75%;
+            background: #fff;
+            /*Utilizamos esto para que se desplace lo maximo posible a la derecha*/
+            margin: 0 0 30px auto;
+            position: relative;
+            left: -30px;
+        }
 
-        @media screen and (max-width: 1179px) {
+            .thumbnail__end-top
+            {
+                padding: 40px;
+            }
+
+                .thumbnail__introduction
+                {
+                    width: 45%;
+                    margin: 0 0 0 auto;
+                    padding: 0 30px;
+                    text-align: justify;
+                    font-style: italic;
+                    font-size: 12px;
+                    letter-spacing: .8px;
+                    color: #09412c;
+                }
+
+                .thumbnail__separator
+                {
+                    width: 100px;
+                    margin: 15px 0 0 71.2%;
+                }
+
+            
+            .thumbnail__end-bottom
+            {
+
+            }
+
+
+
+
+        @media screen and (max-width: 1279px) {
             .thumbnail__video
             {
                 margin-bottom: 50px;
                 width: 100%;
+                position: relative;
             }
 
             .thumbnail__video video
             {
                 width: 100%;
             }
+
+            .thumbnail__side
+            {
+                float: left;
+                width: 50%;
+                height: 150px;
+                padding-bottom: 37px;
+                margin-right: 0;
+            }
+
+                .thumbnail__side img
+                {
+                    float: left;
+                    margin: 0 0 0 20px;
+                }
+
+                .thumbnail__side .thumbnail__h3, .thumbnail__side .thumbnail__h4, .thumbnail__side .thumbnail__span
+                {
+                    position: relative;
+                    left: 25px;
+                }
+            .thumbnail__introduction-responsive
+            {
+                display: block;
+                float: left;
+                width: 50%;
+                height: 150px;
+                margin: 40px 0 0 0;
+                overflow: hidden;
+            }
+
+                .thumbnail__introduction-responsive p 
+                {
+                    word-break:keep-all;                    
+                    line-height: 1.7em;
+                }
+            
+            .thumbnail__introduction
+            {
+                display: none;
+            }
+
+            .thumbnail__end
+            {
+                width: 100%;
+            }
+
+                .thumbnail__separator
+                {
+                    width: 100px;
+                    margin: 0 auto;
+                }
         }
