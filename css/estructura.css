@@ -367,8 +367,15 @@
     {
         background: #bdf7e2;
         flex-grow: 1;
-        padding: 20px;
+        padding: 30px;
     }
+
+        .section-container
+        {
+            background-color: #fcf9ee;
+            height: 100%;
+        }
+   
 
 
 

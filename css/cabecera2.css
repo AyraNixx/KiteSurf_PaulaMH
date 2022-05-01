@@ -1,6 +1,5 @@
 .thumbnail__container
 {
-    display: block;
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;
@@ -32,8 +31,6 @@
 
     .thumbnail__middle
     {
-        
-        background-color: rgba(249, 238, 238, 0.326);
         /*No sé si dejaré las olas del fondo porque no me convencen del todo. ya veré*/
         /*background: url('../img/olas.png');
         background-size: 100px;*/
@@ -41,7 +38,6 @@
         /*Utilizamos flex-flow que mezcla el flex-direction y el flex-wrap*/
         flex-flow: row wrap;
         align-items: start;
-        border: 5px solid #e5815d;
     }
 
         .hojas-thumbnail
