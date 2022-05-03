@@ -27,13 +27,22 @@
                 animation: aparecer 2s ease;
             }
 
-    .layout__imgs-container .tittle__h4
+    .layout__imgs-container .tittle__h1, .layout__imgs-container .tittle__h3
+    {
+        margin-bottom: 25px;
+    }    
+
+    .tittle__h4-container
     {
         position: absolute;
         left: -6px;
-        top: 57px;
-        transform: rotate(270deg);
+        top: 70px;
     }
+
+        .tittle__h4-container .tittle__h4
+        {
+            transform: rotate(270deg);
+        }
 
     .layout__img
     {
@@ -69,10 +78,9 @@
             font-size: 13px;
         }
 
-        .layout__imgs-container .tittle__h4
+        .tittle__h4-container
         {
-            
-            top: 63px;
+            top: 75px;
             left: -13px;
         }
 

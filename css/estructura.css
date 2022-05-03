@@ -375,8 +375,51 @@
             background-color: #fcf9ee;
             height: 100%;
         }
-   
 
+        .divider
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            margin: 50px auto 0;
+            padding: 0 25px;
+            position: relative;
+        }
+
+            .divider::after, .divider::before
+            {
+                content: " ";
+                display: block;
+                height: .09em;
+                width: 30%;
+                background: #ecb5a1;
+            }
+
+            .divider::before
+            {
+                position: relative;
+                left: -35.5px;
+            }
+
+            .divider::after
+            {
+                position: relative;
+                right: -29px;
+            }
+
+
+            .divider__span
+            {
+                background: #ecb5a1;
+            }
+        
+            .divider .tittle__h1
+            {
+                color: #14604483;
+                text-align: center;
+                padding: 0 50px;
+            }
 
 
 

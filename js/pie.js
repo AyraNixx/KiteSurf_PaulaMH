@@ -25,4 +25,4 @@ $("#btn__footer").click(function() {
     }else{
         $("#btn__footer").removeClass("fa-circle-chevron-down").addClass('fa-circle-chevron-up');
     }
-  });
+});
