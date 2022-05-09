@@ -1,4 +1,5 @@
 .wrapper {
+  --color: #1F242D;
   --color-invert: #ffffff;
   --clip-path: circle(15px at left);
   --clip-path-hover: circle(70px at left);
@@ -6,17 +7,37 @@
   --duration: .4s;
   --timing-function: ease;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 
 .wrapper .video {
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
           align-items: center;
   margin-left: 15px;
+  -webkit-clip-path: var(--clip-path);
           clip-path: var(--clip-path);
+  -webkit-transition: -webkit-clip-path var(--duration) var(--timing-function);
+  transition: -webkit-clip-path var(--duration) var(--timing-function);
   transition: clip-path var(--duration) var(--timing-function);
+  transition: clip-path var(--duration) var(--timing-function), -webkit-clip-path var(--duration) var(--timing-function);
 }
 
 .wrapper .video video {
@@ -24,7 +45,12 @@
   background: #c4cbde;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .wrapper .text {
@@ -158,9 +184,18 @@ body {
   background: #E8EBF3;
   height: 100vh;
   font: 400 16px 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
           align-items: center;
 }
 /*# sourceMappingURL=video.css.map */
