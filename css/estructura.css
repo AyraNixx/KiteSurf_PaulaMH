@@ -536,6 +536,8 @@
         /*      DONDE VAN LOS CONTENIDOS           */
         .main__section
         {
+            display: flex;
+            flex-direction: column;
             background: #bdf7e2;
             flex-grow: 1;
             padding: 30px;
@@ -626,6 +628,7 @@
                 
                     .layout__imgs-container .tittle__h1
                     {
+                        margin-top: 25px;
                         margin-bottom: 10px;
                     }
                     

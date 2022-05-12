@@ -145,141 +145,37 @@
             <!--    SECCIÓN EN LA QUE SE VAN A PONER LAS COSAS-->
             <section class="main__section">
                 <div class="section-container">
-
-                    <!--LAYOUT-->
-                    <div class="layout__imgs-container">    
-                        <div class="tittle__h1-container">
-                            <h1 class="tittle__h1">Comienza la aventura<span>&#160</span></h1>
-                        </div>
-                        <div class="tittle__h4-container">
-                            <h4 class="tittle__h4">Cádiz<span>&#160</span></h4>
-                        </div>
-                        <img class="layout__img" src="../img/kitesurfing1.jpg" alt="">
-                        <img class="layout__img" src="../img/kitesurfing2.jpg" alt="">
-                        <img class="layout__img" src="../img/kitesurfing3.jpg"">
-                        <div class="tittle__h3-container">
-                            <h3 class="tittle__h3">Escuela &nbsp; de &nbsp; KiteSurfing<span>&#160</span></h3>                    
-                        </div>
-                    </div>
-
-
-                    <!--DIV DIVISOR-->
-                    <div class="divider">
-                        <h1 class="tittle__h1">Sobre noso<span class="divider__span">tros</span></h1>
-                    </div>
-
                     <!--DIV ACERCA DE...-->
+                    <h1 class="tittle__h1" style="font-size: 40px; text-align: center; letter-spacing: .3px; margin-top: 20px;">SOBRE NOSOTROS</h1>
                     <div class="information-container">
                         <div class="information__text-container">
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut porro officiis voluptate cum suscipit, alias, repellat, nulla incidunt error impedit quidem corrupti deleniti nesciunt doloribus cumque ipsum eius odio debitis.</p>
                         </div>
-                        <div class="information__video-container">
-                            <div class="information__video" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                <video loop muted autoplay playsinline>
-                                    <source src="../video/kitesurf.mp4"  type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="information__video-text">
-                                <span> Ver vídeo </span>
-                            </div>
-                        </div>
-
-                        <!-- Modal -->
-                        <!--ARREGLAR!!!!!!-->
-                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"  data-bs-dismiss="modal" aria-label="Close">
-                            <div class="modal-dialog">
-                                <div class="modal-content" style="position: fixed; left: 0; right: 0; margin: auto; width: 60vw; height: auto;background: transparent; outline: none; border: none;">                              
-                                    <div class="modal-body" style="position: absolute; z-index: 20000; background: transparent;">
-                                        <video style="width: 100%; border: 2px splid white; outline: 3px solid salmon;" controls>
-                                            <source src="../video/kitesurf.mp4"  type="video/mp4">
-                                        </video>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <ul class="information__ul" style="list-style-type: none; columns: 2;">
+                            <li class="information__li" style="font-size: 12px;">
+                                <h4 class="tittle__h4">Direccion</h4>
+                                <span>C/ dksdspd 9</span><br>
+                                <span>El puerto de Sta. M</span><br>
+                                <span>Cadiz</span>
+                            </li>
+                            <li class="information__li"  style="font-size: 12px;">
+                                <h4 class="tittle__h4">Correo</h4>
+                                <span>correoprueba@gmail.com</span>
+                            </li>
+                            <li class="information__li"  style="font-size: 12px;">
+                                <h4 class="tittle__h4">Telefono</h4>
+                                <span>123456789</span>
+                            </li>
+                            <li class="information__li"  style="font-size: 12px;">
+                                <h4 class="tittle__h4">Direccion</h4>
+                                <span>Nombre</span>
+                                <br>
+                                <span>Apellido1</span>
+                                <br>
+                                <span>Apellido2</span>
+                            </li>
+                        </ul>
                     </div>
-
-
-
-
-                    
-
-
-                    <!--DIV DIVISOR-->
-                    <div class="divider" style="margin-top: 20px; margin-bottom:20px;">
-                        <h1 class="tittle__h1">últimas entra<span class="divider__span">das</span></h1>
-                    </div>
-
-
-                    <!--DIV QUE CONTIENE NOTICIAS O CUALQUIER OTRA COSA QUE LE QUERAMOS METER COMO POR EJEMPLO
-                        OFERTAS-->
-                    <div class="news-container">
-                        <div class="row">
-                            <div class="col-auto p-3">
-                                <div class="card" style="width: 18rem;">
-                                    <div class="card-body d-flex flex-column justify-content-center justify-content-evenly">
-                                        <h1 class="card-title">Lorem ipsum dolor sit amet consectetur.</h1>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.<br><span><a href="#">...</a></span></p>                                  
-                                        <div class="release-container">
-                                            <span>Autor</span>
-                                            <span>Fecha de publicacion</span>
-                                        </div>
-                                    </div>
-                                </div>                              
-                            </div>
-                            <div class="col-auto p-3">
-                                <div class="card" style="width: 18rem;">
-                                    <div class="card-body d-flex flex-column justify-content-center justify-content-evenly">
-                                        <h1 class="card-title">Lorem ipsum dolor sit amet consectetur.</h1>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.<br><span><a href="#">...</a></span></p>                                  
-                                        <div class="release-container">
-                                            <span>Autor</span>
-                                            <span>Fecha de publicacion</span>
-                                        </div>
-                                    </div>
-                                </div>                              
-                            </div>
-                            <div class="col-auto p-3">
-                                <div class="card" style="width: 18rem;">
-                                    <div class="card-body d-flex flex-column justify-content-center justify-content-evenly">
-                                        <h1 class="card-title">Lorem ipsum dolor sit amet consectetur.</h1>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.<br><span><a href="#">...</a></span></p>                                  
-                                        <div class="release-container">
-                                            <span>Autor</span>
-                                            <span>Fecha de publicacion</span>
-                                        </div>
-                                    </div>
-                                </div>                              
-                            </div>
-                        </div>
-                        <div class="row">
-                            <a href="">
-                                <i class="fa-solid fa-arrow-right-long"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!--DIV DIVISOR-->
-                    <div class="divider" style="margin-top: 20px; margin-bottom:20px;">
-                        <h1 class="tittle__h1">últimas entra<span class="divider__span">das</span></h1>
-                    </div>
-
-                    <div class="section-page-container" style="width: 70%; margin: 0 auto;">
-                        <div class="section-page" style="display: flex; flex-direction: row;">
-                            <div class="image-tittle-container" style="display: flex; flex-direction:column; width: 400px;">
-                                <h1 class="section-page__h1 tittle__h1">CURSOS DE KITESURFING</h1>
-                                <img src="../img/kitesurfing1.jpg" style="width: 100%; object-fit: conver; object-position: 50% 50%;" alt="">
-                            </div>
-                            <div class="section-page__text-container" style=" align-self:end; text-align:center; margin: 20px;">
-                                <p class="section-page__text">lorem30</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
                 </div>
             </section>
 
