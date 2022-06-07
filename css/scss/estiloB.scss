@@ -1,0 +1,1062 @@
+/*Primero se definen las variables que queremos modificar*/
+
+
+//////////////////////////////////////////////////////////
+///// //////  PATRONES DE COLORES             ///// ////// 
+//////////////////////////////////////////////////////////
+$tittle1: #e5815d;
+$tittle2: #14604483;
+$color1: #e1a48e;
+$logoh6: #40a983;
+$hover1: #cf6640;
+$hover2: #BF8069;
+$active1: #7a5142;
+$links1: #14604483;
+$links2: #146044ba;
+$border1: #ecb5a1;
+$border2: #8dbbaa;
+$border3: #ecb5a1c3;
+$background1: #8dbbaa71;
+$background2: #8dbbaa9d;
+$profession: #8b9692ea;
+$colour-background-stripes: #ceede2;
+
+
+//////////////////////////////////////////////////////////
+///// //////  MODIFICAR VARIABLES CARD        ///// ////// 
+//////////////////////////////////////////////////////////
+$card-border-radius: 0;
+$card-inner-border-radius: 0;
+$card-height: 320px;
+$card-color: $links1;
+
+
+
+
+
+//////////////////////////////////////////////////////////
+///// //////  PATRONES DE FORM-CONTROL INPUT  ///// ////// 
+//////////////////////////////////////////////////////////
+$input-font-size: 12px;
+
+
+
+
+
+//////////////////////////////////////////////////////////
+///// //////  INPUT GROUP TEXT               ///// ////// 
+//////////////////////////////////////////////////////////
+$input-group-addon-color: $tittle1;
+$input-group-addon-bg: transparent;
+$input-group-addon-border-color: $border3;
+
+
+
+
+
+
+//////////////////////////////////////////////////////////
+///// //////  MODAL                           ///// ////// 
+//////////////////////////////////////////////////////////
+$modal-content-bg: transparent;
+$modal-content-border-color: transparent;
+
+
+
+
+
+
+
+// IMPORTAMOS LOS ESTILOS DE BOOTSTRAP
+@import "../../bootstrap-5.1.3/scss/bootstrap.scss";
+
+
+/*      FUENTES         */
+@font-face {
+    font-family: Haloha;
+    src: url('../fonts/Haloha/Haloha.ttf'), url('../fonts/Haloha/Haloha.otf'), url('../fonts/Haloha/Haloha.woff'),
+    url('../fonts/Haloha/Haloha.woff2');
+}
+
+
+
+
+//////////////////////////////////////////////////////////
+///// //////                CARD              ///// ////// 
+//////////////////////////////////////////////////////////
+
+
+//SI QUEREMOS PERSONALIZARLOS CON MÁS PROFUNDIDAD, LLAMAMOS A LA CLASE QUE QUEREMOS CAMBIAR
+.card
+{
+    position: relative;
+    background: repeating-linear-gradient(-24deg,transparent,transparent 4px, $colour-background-stripes 0, $colour-background-stripes 5px);
+    border-color: $colour-background-stripes;
+    .card-body
+    {
+        width: 100%;
+        border: 1px solid $border1;
+        background: #fcf9ee;
+        position: relative;
+        left: 10px;
+        top: 10px;
+        h1
+        {
+            font-size: 32px;
+            letter-spacing: .8px;
+            border-bottom: 2px solid $tittle1;
+            color: $tittle1;
+        }
+    
+        p
+        {
+            margin-top: 15px;
+            font-size: 15px;
+            text-align: justify;
+            overflow: hidden;
+    
+            span 
+            {
+                display: block;
+                text-align: center;
+
+                a
+                {
+                    font-size: 25px;
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: $card-color;
+
+                    &:hover
+                    {
+                        color: $hover2;
+                        
+                        
+                    }
+                    
+                    &:active
+                    {
+                        color: $active1;
+                    }
+                }               
+            }
+        }
+    
+        .release-container
+        {
+            display: flex;
+            justify-content: space-between;
+            font-size: 10px;
+            color: $hover2;
+        }
+        
+        &:hover
+        {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 20px -15px #0000004d;
+        }
+    }   
+}  
+
+.news-container
+{
+    margin-bottom: 50px;
+    .row:nth-of-type(2)
+    {
+        text-align: end;
+        padding: 0;
+        a
+        {            
+            font-size: 30px;
+            color: $tittle1;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .news-container
+    {
+        width: 100%;
+    }
+
+    .row
+    {
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+//////////////////////////////////////////////////////////
+////////////   PARA EL FORMULARIO DE CONTACTAR   /////////
+//////////////////////////////////////////////////////////
+.section-container
+{
+    .tittle-contact__h1
+    {
+        font-size: 3.5em;
+        font-family: 'Haloha';
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: .2px;
+        text-align: center;
+        text-transform: capitalize;
+        color: $tittle1;
+        margin: 30px 0;
+    }
+    .information__text-container
+    {
+        padding: 0;
+    }
+
+    .contact__ul
+    {
+        list-style-type: none;
+        font-size: 12px;
+        color: $links1;
+        li
+        {
+            .tittle-contact__h4
+            {                            
+                font-size: 13px;
+                letter-spacing: .2em;
+                color: $tittle1;
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .contact__form
+    {
+        width: 40%;
+
+        form
+        {
+            position: relative;
+            width: 100%;
+            margin: 0;
+            border: 1px solid $border3;
+            border-radius: 4px;
+
+            .form-control, button
+            {
+                width: 100%;
+                padding: 10px;
+
+                font-size: 12px;
+                color: $links1;
+
+                background: transparent;
+
+                border: none;
+                border-bottom: 1px solid $border3;
+                border-radius: 0;
+                
+                transition: all 0.3s ease-in-out;
+
+                &::placeholder
+                {                
+                    color: $links1;
+                }
+
+                &:focus
+                {
+                    box-shadow: none;
+                    outline: none;
+                }
+
+                &:hover
+                {
+                    color: #fff;
+                    
+                    background-color: $background1;
+
+                    &::placeholder
+                    {
+                        color: #fff;
+                    }
+                }
+            }
+
+            textarea
+            {
+                resize: none;
+            }
+
+            button
+            {
+                text-transform: uppercase;
+
+                border-bottom: none;
+
+                &:active
+                {
+                    background: $background2;
+                }
+            }
+
+            .input-group
+            {
+                .input-group-text
+                {
+                    border-top: none;
+                    border-left: none;
+                    border-radius: 0;
+                }
+
+
+                .form-control
+                {                    
+                    width: auto;
+
+                }
+            }
+        }
+
+
+
+
+        ///PROVISIONAL
+        .mapa
+        {
+            width: 70%;
+
+            iframe
+            {
+                width: 100%;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+
+    .section-container
+    {
+        .contact__form
+        {
+            width: 90%;
+        }
+    }    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////
+/////////////       GALERIA                           //////
+///////////////////////////////////////////////////////////
+
+.gallery-container
+{
+    position: relative;    
+
+    .gallery-background
+    {
+        width: 100%;
+        height: 350px;
+
+        margin: 0;
+
+        //Tengo que buscar algun color de fondo que me guste porque por ahora este es un NO
+        background: #caebcd;
+
+        position: absolute;
+        z-index: 1;      
+    }
+   
+    .tittle-contact__h1
+    {
+        color: #fff;
+        
+        margin: 0;
+        padding: 20px 0;
+
+        font-size: 65px;
+
+        position: relative;
+        z-index: 5;
+    }
+        
+    .gallery__p
+    {
+        width: 80%;
+        
+        margin: 0 auto;
+        
+        font-style: italic;
+        font-size: 14px;
+        text-align: center;
+        color: rgb(255, 251, 251);
+
+        position: relative;
+        z-index: 5;
+    }
+
+    .gallery-imgs-container
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+
+        gap: 20px;
+
+        width: 100%;
+
+        margin: 50px 0;
+
+        position: relative;
+
+        z-index: 5;
+
+        .img-container
+        {   
+            position: relative;       
+            
+            z-index: 0;
+
+            cursor: pointer;
+
+            .img-content
+            {
+                display: none;
+                width: 100%;
+
+                background: white;
+                
+                box-shadow: 2px 2px 5px #00000037;  
+
+                padding: 5px;
+
+                .img-tittle__h2
+                {
+                    font-size: 25px;
+                    color: $border1;
+                }
+
+                .img-tittle__h3
+                {
+                    font-size: 13px;
+                    letter-spacing: .2 px;
+                    color: $links1;
+                }
+
+            }
+
+            .img-content-hover
+            {
+                display: none;
+                width: 50%;
+                height: fit-content;
+
+                background: #ffffffd7;  
+                
+                box-shadow: 2px 2px 10px #00000050;                        
+                
+                padding: 5px;
+                margin: auto;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+
+                z-index: 1000;
+
+                .img-tittle__h2
+                {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $border1;
+                }
+
+                .img-tittle__h3
+                {
+                    font-size: 10px;
+                    color: $links1;
+                    letter-spacing: .5px;
+                }
+            }
+
+            img
+            {
+                width: 100%;
+                height: 230px;
+
+                object-fit: cover;
+                object-position: 50% 50%;
+
+                transition: all .4s ease-in-out;
+
+                cursor: zoom-in;
+
+                &:hover
+                {
+                    //Transform: scale modifica el tamaño de un elemento en un plano 2D
+                    transform: scale(1.025);
+                }
+            }
+
+            &:hover .img-content-hover
+            {
+                display: inline-block;        
+            }
+        }
+    }
+
+    .modal
+    {
+        .modal-dialog
+        {
+            width: 466px;
+            height: 651px;
+
+            .modal-content
+            {
+                width: 100%;
+                height: 100%;
+
+                .modal-body
+                {
+                    width: 100%;
+                    height: 100%;
+
+                    .modal-img-container
+                    { 
+                        width: 100%;
+                        height: 100%;
+
+                        img
+                        {
+                            width: 100%;
+                            height: 100%;
+
+                            object-fit: cover;
+                            object-position: 50% 50%;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .gallery-container
+    {
+        .gallery-imgs-container
+        {
+
+            .img-container
+            {  
+                width: 90%;
+                margin: 0 auto;
+
+                &:hover .img-content
+                {
+                    //Transform: scale modifica el tamaño de un elemento en un plano 2D
+                    transform: scale(1.025);
+                }
+
+                .img-content
+                {
+                    display: inline-block;
+                    transition: all .4s ease-in-out;
+
+                    
+                } 
+                
+                &:hover .img-content-hover
+                {
+                    display: none;
+                }
+            }
+                
+        }
+
+        /////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////
+        ///////////    PEDIR AYUDA A ANTONIO                ////////////
+        .modal
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .modal-dialog
+            {
+                width: 266px;
+                height: 451px;                
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////
+/////////////       APARTADO DE NOTICIAS              //////
+///////////////////////////////////////////////////////////
+.news__h1
+{
+    font-size: 3.5em;
+    font-family: 'Haloha';
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: .2px;
+    text-align: center;
+    text-transform: capitalize;
+    color: $tittle1;
+    margin: 30px 0;   
+}
+
+.news-layout
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 0 10px 10px;
+
+    .news-column
+    {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 20%;
+
+        border-right: 1px solid $border1;
+
+        overflow: hidden;
+        
+
+        .news-article
+        {            
+            margin: 0 15px 15px;
+
+            .news__h2
+            {
+                font-size: 34px;
+            }
+
+            .news__h3
+            {
+                font-size: 25px;
+            }
+
+            .news__h2, .news__h3
+            {
+                margin-bottom: 10px;
+
+                line-height: 1.1em;
+
+                .news__a
+                {
+                    text-decoration: none;
+                    color: $tittle1;
+                }
+            }
+
+            .news__img-container, .news__img-container-mini
+            {
+                width: 100%;
+                height: 350px;
+                
+                margin-bottom: 10px;
+                
+                img 
+                {
+                    width: 100%;
+                    height: 100%;
+
+                    object-fit: cover;
+                    object-position: 50% 50%;
+                }
+            }
+
+            .news__img-container-mini
+            {
+                height: 150px;
+            }
+
+            .news-content__container
+            {                
+                font-size: 14px;
+                text-align: justify;
+                color: $links1;
+
+                hyphens: auto;
+
+                .news__p + .news__p
+                {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .news__author
+            {
+                display: flex;
+                flex-wrap: wrap;
+
+                height: fit-content;
+
+                align-items: center;
+
+                .author__img-container
+                {
+                    width: 40px;
+                    height: 40px;
+
+                    margin-right: 7px;
+
+                    .author__img
+                    {
+                        width: 100%;
+                        height: 100%;
+
+                        object-fit: cover;
+                        object-position: 60% 50%;
+                    }
+
+                }
+
+                .author-info
+                {
+                    font-size: 12px;
+                    font-weight: 400;
+                    letter-spacing: .5px;
+                    color: $border1;
+
+                    .author-porfession
+                    {
+                        font-size: 10px;
+                        font-weight: 300;
+                        color: $profession;
+                    }
+                }
+            }
+        }
+
+        //Como queremos que tras cada articulo haya una linea en caso de que haya otro 
+        //articulo debajo, podemos usar el selector + para indicar que solo auqellos articulos
+        //que vayan detras de otro articulo tengan un border-top
+        .news-article + .news-article
+        {
+            padding-top: 10px;
+
+            border-top: 1px solid $border1;            
+        }
+
+        &:nth-of-type(2)
+        {
+            width: 40%;
+        }
+
+        &:last-of-type
+        {
+            border-right: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .news-layout
+    {
+        flex-direction: column;
+
+        flex-wrap: wrap;
+
+        .news-column
+        {
+            width: 100%;
+
+            border-right: none;    
+            
+            .news-article
+            {
+                .news__img-container, .news__img-container-mini
+                {
+                    height: 350px;
+                }
+            }
+        }
+
+        .news-column:nth-of-type(2)
+        {
+            width: 100%;
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////
+/////////////       SECTION PAGE                      //////
+///////////////////////////////////////////////////////////
+
+
+.section-page-container
+{
+    display: flex;
+    align-items: center;
+
+    width: 70%;
+
+    margin: 0 auto;
+    margin-bottom: 70px;
+
+    .section-page__img-container
+    {
+        width: 40%;
+        height: 450px;
+
+
+        position: relative;
+
+        .section-page__img
+        {
+            display: none;
+
+            width: 100%;
+            height: 100%;
+
+            position: relative;
+
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+
+        .active
+        {
+            display: block;
+        }
+        .section-page__img-options
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            width: 49px;
+            height: 150px;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: -23.5px;
+
+            background: repeating-linear-gradient(-24deg,transparent,#b4e4d3 4px, #a6dec9d4 0, #fff 5px);
+
+            position: absolute;   
+
+            top: 0;
+            bottom: 0;
+
+            z-index: 10;
+
+            i 
+            {
+                font-size: 13px;
+                color: #71cbaa; 
+                
+                cursor: pointer;
+
+                &:hover
+                {
+                    color: $links1;
+                }
+
+                &:active
+                {
+                    color: $links2;
+                }
+            }
+
+            i + i 
+            {
+                margin-top: 15px;
+            }
+        }
+
+        .section-page__a-container
+        {
+            background: repeating-linear-gradient(-24deg,transparent,#b4e4d3 4px, #a6dec9d4 0, #fff 5px);
+
+            padding: 10px;
+            
+            position: absolute;
+            right: -20px;
+            bottom: -20px;
+            z-index: 10;
+
+            a 
+            {
+                font-size: 20px;
+                text-decoration: none;
+                color: #71cbaa;
+
+                cursor: pointer;
+
+                &:hover
+                {
+                    color: $links1;
+                }
+
+                &:active
+                {
+                    color: $links2;
+                }
+            }
+        }
+    }
+
+
+    .section-page__content-container
+    {
+        width: 60%;
+        margin-left: 30px;
+
+        .section-page__h1
+        {
+            color: $links1;
+
+            .section-page-course
+            {
+                background: $border1;
+            }
+
+        }
+
+        .section-page__p
+        {
+            padding-left: 5px;
+
+            border-left: 4px solid $links1;
+
+            font-size: 13px;
+            text-align: justify;
+            color: $color1;
+
+            hyphens: auto;
+        }
+    }
+
+    &:nth-of-type(even)
+    {
+        flex-direction: row-reverse;
+
+        .section-page__content-container
+        {
+            margin-left: 0;
+            margin-right: 30px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .section-page-container
+    {
+        width: 90%;
+
+        flex-wrap: wrap;
+
+        .section-page__img-container
+        {
+            width: 50%;
+            height: 340px;
+        }
+
+        .section-page__content-container
+        {
+            width: 40%;
+
+            overflow: hidden;
+
+            .section-page__h1
+            {
+                font-size: 27px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+
+    .section-page-container
+    {
+        justify-content: center;
+
+        width: 100%;
+
+        padding: 0 30px;
+        margin-bottom: 40px;
+
+        flex-wrap: wrap;
+
+        .section-page__img-container
+        {
+            width: 100%;
+            height: 240px;
+        }
+
+        .section-page__content-container
+        {
+            width: 100%;
+
+            margin-left: 0;
+
+            overflow: hidden;
+
+            .section-page__h1
+            {
+                font-size: 27px;
+            }
+
+            .section-page__p
+            {
+                font-size: 12px;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/scss/estiloB.css">
+    <link rel="stylesheet" href="../css/estructura.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="shortcut icon" href="#">
+    <script src="https://kit.fontawesome.com/8d125d2b91.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="container p-0">
+
+
+        <!--CABECERA-->
+        <header class="header">
+            <div class="header__logo-container">
+                <a href="../html/portada.html"><h1 class="logo__h1">Mai Kai</h1></a>
+                <h6 class="logo__h6">KiteSurfing</h6>
+                <img src="../img/hojas.png" alt="">
+            </div>
+        </header>
+
+
+
+
+        <!--PARTE PRINCIPAL DE LA PÁGINA-->
+        <main class="main">
+
+
+
+
+            <!--REPRODUCTOR DE MUSICA-->
+            <audio id="player" >
+                <!--Primera canción-->
+                <source src="../music/Cake_by_the_Ocean.mp3" type="audio/mp3">
+            </audio>
+        
+        
+            <div class="music-container">
+                <div class="player-logo">
+                    <div>
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+                </div>
+                <div class="player-options">
+                    <i class="fa-solid fa-circle-play" onclick="document.getElementById('player').play()"></i>
+                    <br>
+                    <i class="fa-solid fa-stop" onclick="document.getElementById('player').pause()"></i>
+                    <br>
+                    <i id="btn_previous" class="fa-solid fa-angle-left"></i>
+                    <br>
+                    <i id="btn_next" class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <!--    MENU DESPLEGABLE    -->
+            <aside class="main__nav">
+                <nav class="nav__btn-container">
+                    <button class="nav__btn" id="nav__menu">
+                        Menu
+                    </button>
+                </nav>
+
+
+                <!--    MENU QUE SE MUESTRA AL PULSAR EL BOTÓN  -->
+                <div class="nav nav-showed">
+                    <!--Boton de cerrar-->
+                    <i class="fa-solid fa-xmark btn__close"></i>
+
+                    <!--Logo-->
+                    <div class="nav-logo">
+                        <img src="https://i.pinimg.com/originals/c5/0b/cd/c50bcdb9ece6fcadce9f6d2d7ef174c5.png" alt="Logo de ejemplo(no el final)" title="Logo de ejemplo(he puesto el tooltip-dir para probar)" tooltip-dir="left">
+                    </div>
+
+                    <!--Caja de búsqueda-->
+                    <div class="search-box">
+                        <button class="btn__search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="search" class="search__input" placeholder="Buscar...">
+                    </div>
+
+                    <!--Opciones del menú-->
+                    <ul class="nav-ul">
+                        <li class="nav__li">
+                            <a href="#">Ejemplo1</a>
+                        </li>
+                        <li class="nav__li">
+                            <a href="#">Ejemplo2</a>
+                        </li>
+                        <li class="nav__li">
+                            <a href="#">Ejemplo3</a>
+                        </li>
+                        <li class="nav__li">
+                            <a href="./Galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav__li">
+                            <a href="../html/Noticias.html">Noticias</a>
+                        </li>
+                    </ul>
+
+                    <!--Opciones de ayuda, por ejemplo (?)-->
+                    <ul class="nav-ul">
+                        <li class="nav__li">
+                            <a href="../html/Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav__li">
+                            <a href="#">Ayuda2</a>
+                        </li>
+                    </ul>
+
+                    <i></i>
+
+                    <!--Contactos-->
+                    <div class="info-container">
+                        <ul class="info__ul">
+                            <li class="info__ul-li">
+                                <a href="" class="fa-solid fa-phone-flip"></a>
+                                <i>+34 123456789</i>
+                            </li>
+                            <li class="info__ul-li">
+                                <a href="" class="fa-solid fa-envelope"></a>
+                                <i>maikaikitesurfing@gmail.com</i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+
+
+            
+
+            <!--    SECCIÓN EN LA QUE SE VAN A PONER LAS COSAS-->
+            <section class="main__section">
+                <div class="section-container">
+                    <div class="gallery-container">
+                        <div class="gallery-background"></div>
+
+                        <h1 class="tittle-contact__h1">Galeria</h1>
+                        <p class="gallery__p"> <span>—&nbsp;</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aliquam odio nemo!</p>    
+                        
+                        <div class="gallery-imgs-container">
+                            <!--Indicamos cuantas columnas queremos que ocupe segun el tamaño
+                                de la pantalla-->
+                            <div class="col-lg-3 col-md-5 col-sm-8">
+                                <div class="img-container">
+                                    <img src="../img/kitesurfing4.jpg" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <!--Para la leyenda que aparecerá cuando se vuelva más estrecho-->
+                                    <figcaption class="img-content">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </figcaption>
+
+                                    <!--Muestra lo mismo que la leyenda pero al pasar por encima-->
+                                    <span class="img-content-hover">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-5 col-sm-8">
+                                <div class="img-container">
+                                    <img src="../img/ejemplo2.jpg" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <!--Para la leyenda que aparecerá cuando se vuelva más estrecho-->
+                                    <figcaption class="img-content">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </figcaption>
+
+                                    <!--Muestra lo mismo que la leyenda pero al pasar por encima-->
+                                    <span class="img-content-hover">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-5 col-sm-8">
+                                <div class="img-container">
+                                    <img src="https://p.favim.com/orig/2018/08/06/aesthetic-surf-board-summer-aesthetic-Favim.com-6100769.jpg" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <!--Para la leyenda que aparecerá cuando se vuelva más estrecho-->
+                                    <figcaption class="img-content">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </figcaption>
+
+                                    <!--Muestra lo mismo que la leyenda pero al pasar por encima-->
+                                    <span class="img-content-hover">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-5 col-sm-8">
+                                <div class="img-container">
+                                    <img src="../img/ejemplo1.jpg" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <!--Para la leyenda que aparecerá cuando se vuelva más estrecho-->
+                                    <figcaption class="img-content">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </figcaption>
+
+                                    <!--Muestra lo mismo que la leyenda pero al pasar por encima-->
+                                    <span class="img-content-hover">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-5 col-sm-8">
+                                <div class="img-container">
+                                    <img src="../img/kitesurfing4.jpg" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <!--Para la leyenda que aparecerá cuando se vuelva más estrecho-->
+                                    <figcaption class="img-content">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </figcaption>
+
+                                    <!--Muestra lo mismo que la leyenda pero al pasar por encima-->
+                                    <span class="img-content-hover">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-5 col-sm-8">
+                                <div class="img-container">
+                                    <img src="../img/ejemplo2.jpg" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <!--Para la leyenda que aparecerá cuando se vuelva más estrecho-->
+                                    <figcaption class="img-content">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </figcaption>
+
+                                    <!--Muestra lo mismo que la leyenda pero al pasar por encima-->
+                                    <span class="img-content-hover">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-5 col-sm-8">
+                                <div class="img-container">
+                                    <img src="https://p.favim.com/orig/2018/08/06/aesthetic-surf-board-summer-aesthetic-Favim.com-6100769.jpg" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <!--Para la leyenda que aparecerá cuando se vuelva más estrecho-->
+                                    <figcaption class="img-content">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </figcaption>
+
+                                    <!--Muestra lo mismo que la leyenda pero al pasar por encima-->
+                                    <span class="img-content-hover">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-5 col-sm-8">
+                                <div class="img-container">
+                                    <img src="../img/ejemplo1.jpg" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <!--Para la leyenda que aparecerá cuando se vuelva más estrecho-->
+                                    <figcaption class="img-content">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </figcaption>
+
+                                    <!--Muestra lo mismo que la leyenda pero al pasar por encima-->
+                                    <span class="img-content-hover">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-5 col-sm-8">
+                                <div class="img-container">
+                                    <img src="../img/kitesurfing4.jpg" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <!--Para la leyenda que aparecerá cuando se vuelva más estrecho-->
+                                    <figcaption class="img-content">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </figcaption>
+
+                                    <!--Muestra lo mismo que la leyenda pero al pasar por encima-->
+                                    <span class="img-content-hover">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-5 col-sm-8">
+                                <div class="img-container">
+                                    <img src="../img/ejemplo2.jpg" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <!--Para la leyenda que aparecerá cuando se vuelva más estrecho-->
+                                    <figcaption class="img-content">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </figcaption>
+
+                                    <!--Muestra lo mismo que la leyenda pero al pasar por encima-->
+                                    <span class="img-content-hover">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-5 col-sm-8">
+                                <div class="img-container">
+                                    <img src="https://p.favim.com/orig/2018/08/06/aesthetic-surf-board-summer-aesthetic-Favim.com-6100769.jpg" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <!--Para la leyenda que aparecerá cuando se vuelva más estrecho-->
+                                    <figcaption class="img-content">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </figcaption>
+
+                                    <!--Muestra lo mismo que la leyenda pero al pasar por encima-->
+                                    <span class="img-content-hover">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-5 col-sm-8">
+                                <div class="img-container">
+                                    <img src="../img/ejemplo1.jpg" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <!--Para la leyenda que aparecerá cuando se vuelva más estrecho-->
+                                    <figcaption class="img-content">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </figcaption>
+
+                                    <!--Muestra lo mismo que la leyenda pero al pasar por encima-->
+                                    <span class="img-content-hover">
+                                        <h2 class="img-tittle__h2">Foto 1 bb</h2>
+                                        <h3 class="img-tittle__h3">ola k tal? jjaja</h3>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"  data-bs-dismiss="modal" aria-label="Close">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content" >
+                                  <div class="modal-body" data-dismiss="modal" aria-label="Close">
+                                      <div class="modal-img-container">
+                                          <img src="" alt="Foto de la galería">
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <!--    ZONA DE LAS REDES SOCIALES      -->
+            <aside class="main__nav">
+                <div class="nav_networks-container">
+                    <a class="nav__networks fa-brands fa-twitter" href="https://twitter.com" target="_blank"></a>
+                    <a class="nav__networks fa-brands fa-instagram" href="https://instagram.com" target="_blank"></a>
+                    <a class="nav__networks fa-brands fa-facebook-f" href="https://facebook.com" target="_blank"></a>
+                </div>
+            </aside>
+
+        </main>
+
+
+
+        <!--PIE DE PÁGINA-->
+        <footer class="footer">
+            <i class="fa-solid fa-circle-chevron-up" id="btn__footer"></i>
+            <ul class="footer__ul">
+                <div class="footer__ul-container-li">
+                    <li class="ul__li"><a href="#">Home</a></li>
+                    <li class="ul__li"><a href="#">Servicios</a></li>
+                    <li class="ul__li"><a href="#">Acerca de nosotros</a></li>
+                    <li class="ul__li"><a href="#">Condiciones</a></li>
+                    <li class="ul__li"><a href="#">Política de privacidad</a></li>
+                </div>                
+            </ul>
+
+            <div class="footer__main-content">
+
+                <!--Primer div-->
+
+                <div class="footer__main-content_div1">
+                    <div class="footer__logo-container">
+                        <h3 class="footer__logo">Mai Kai</h3>
+                        <h6 class="logo__h6">KiteSurfing</h6>
+                    </div>
+                    <!--Pequeño texto acerca de quien son o frase conocida de la pagina-->
+                    <i class="footer-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem iure a necessitatibus consectetur aut minus illum voluptatum, ex consequatur accusantium eligendi enim! Asperiores nulla voluptate ex modi repellat sequi tempore.</i>
+                </div>
+                   <!--SEGUNDO DIV DEL FOOTER MAIN-->
+
+                <div class="footer__main-content-div2">
+                    <h3 class="footer__h3">Informacion</h3>
+                    <!--Informacion, como el numero de telefono, direccion, correo...-->
+                    <ul class="footer__aside-ul">
+                        <li class="footer__aside-li">
+                            <a href="" class="fa-solid fa-location-dot"></a>
+                            <i>Av. Falsa Falsísima 51, 00001, Mentiraland, ABC</i>
+                        </li>
+                        <li class="footer__aside-li">
+                            <a href="" class="fa-solid fa-phone-flip"></a>
+                            <i>+34 123456789</i>
+                        </li>
+                        <li class="footer__aside-li">
+                            <a href="" class="fa-solid fa-envelope"></a>
+                            <i>maikaikitesurfing@gmail.com</i>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!--TERCER DIV DEL FOOTER MAIN-->
+
+                <div class="footer__main-content-div3">
+                    <!--Logo-->
+                    <div class="footer__logo-img">
+                        <img src="https://i.pinimg.com/originals/c5/0b/cd/c50bcdb9ece6fcadce9f6d2d7ef174c5.png" alt="Logo de ejemplo(no el final)" title="Logo de ejemplo(he puesto el tooltip-dir para probar)" tooltip-dir="left">
+                    </div>
+
+                    <div class="div3-content">
+                        <h3 class="footer__h3">Obten las utimas noticias y ofertas</h3>
+                        <div class="footer__email-container">
+                            <input type="email" class="footer__email" placeholder="Dirección de Email">
+                            <input type="submit" class="footer__email-btn" value="Suscribirse">
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
+
+            <div class="footer__div">
+                <b class="div__name">KiteSurfing</b>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/music.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/pie.js"></script>
+    <script src="../js/galeria.js"></script>
+</body>
+</html>

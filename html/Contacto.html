@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../bootstrap-5.1.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/scss/cards.css">
+    <link rel="stylesheet" href="../css/scss/estiloB.css">
     <link rel="stylesheet" href="../css/estructura.css">
     <link rel="stylesheet" href="../css/information.css">
     <link rel="stylesheet" href="../css/normalize.css">
@@ -15,13 +14,13 @@
 </head>
 <body>
 
-    <div class="container" style="padding:0;">
+    <div class="container p-0">
 
 
         <!--CABECERA-->
         <header class="header">
             <div class="header__logo-container">
-                <a href="#"><h1 class="logo__h1">Mai Kai</h1></a>
+                <a href="../html/portada.html"><h1 class="logo__h1">Mai Kai</h1></a>
                 <h6 class="logo__h6">KiteSurfing</h6>
                 <img src="../img/hojas.png" alt="">
             </div>
@@ -103,17 +102,17 @@
                             <a href="#">Ejemplo3</a>
                         </li>
                         <li class="nav__li">
-                            <a href="#">Ejemplo4</a>
+                            <a href="./Galeria.html">Galeria</a>
                         </li>
                         <li class="nav__li">
-                            <a href="./Contacto.html">Contacto</a>
+                            <a href="./Noticias.html">Noticias</a>
                         </li>
                     </ul>
 
                     <!--Opciones de ayuda, por ejemplo (?)-->
                     <ul class="nav-ul">
                         <li class="nav__li">
-                            <a href="#">Ayuda1</a>
+                            <a href="../html/Contacto.html">Contacto</a>
                         </li>
                         <li class="nav__li">
                             <a href="#">Ayuda2</a>
@@ -146,28 +145,29 @@
             <section class="main__section">
                 <div class="section-container">
                     <!--DIV ACERCA DE...-->
-                    <h1 class="tittle__h1" style="font-size: 40px; text-align: center; letter-spacing: .3px; margin-top: 20px;">SOBRE NOSOTROS</h1>
+                    <h1 class="tittle-contact__h1">Sobre nosotros</h1>
                     <div class="information-container">
                         <div class="information__text-container">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut porro officiis voluptate cum suscipit, alias, repellat, nulla incidunt error impedit quidem corrupti deleniti nesciunt doloribus cumque ipsum eius odio debitis.</p>
+                            <p> <span>—&nbsp;</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut porro officiis voluptate cum suscipit, alias, repellat, nulla incidunt error impedit quidem corrupti deleniti nesciunt doloribus cumque ipsum eius odio debitis.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta tempora sit magnam dolores deserunt sapiente beatae nesciunt. Ipsa, autem blanditiis iusto veniam similique laborum sapiente ex sit accusamus, placeat et?</p>
                         </div>
-                        <ul class="information__ul" style="list-style-type: none; columns: 2;">
-                            <li class="information__li" style="font-size: 12px;">
-                                <h4 class="tittle__h4">Direccion</h4>
+                        <ul class="contact__ul" >
+                            <li class="contact__li">
+                                <h4 class="tittle-contact__h4">Direccion</h4>
                                 <span>C/ dksdspd 9</span><br>
                                 <span>El puerto de Sta. M</span><br>
                                 <span>Cadiz</span>
                             </li>
-                            <li class="information__li"  style="font-size: 12px;">
-                                <h4 class="tittle__h4">Correo</h4>
+                            <li class="contact__li">
+                                <h4 class="tittle-contact__h4">Correo</h4>
                                 <span>correoprueba@gmail.com</span>
                             </li>
-                            <li class="information__li"  style="font-size: 12px;">
-                                <h4 class="tittle__h4">Telefono</h4>
+                            <li class="contact__li">
+                                <h4 class="tittle-contact__h4">Telefono</h4>
                                 <span>123456789</span>
                             </li>
-                            <li class="information__li"  style="font-size: 12px;">
-                                <h4 class="tittle__h4">Direccion</h4>
+                            <li class="contact__li">
+                                <h4 class="tittle-contact__h4">Direccion</h4>
                                 <span>Nombre</span>
                                 <br>
                                 <span>Apellido1</span>
@@ -175,6 +175,24 @@
                                 <span>Apellido2</span>
                             </li>
                         </ul>
+                        <h1 class="tittle-contact__h1">Contactar</h1>
+                        <div class="contact__form">
+                            <form>  
+                                <input type="text" placeholder="Nombre" class="form-control">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
+                                    <input type="email" placeholder="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-phone-flip"></i></span>
+                                    <input type="tel" class="form-control" pattern="[0-9]{3} [0-9]{2} [0-9]{2} [0-9]{2}" placeholder="123 45 67 89"> 
+                                </div>
+                                <textarea rows="5" class="form-control" placeholder="Mensaje"></textarea>                    
+                                <button type="submit" class="btn btn-primary">Enviar</button>                            
+                            </form>
+                        </div>      
+                        <div class="map-responsive">                                
+                        </div>                  
                     </div>
                 </div>
             </section>
