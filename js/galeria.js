@@ -32,9 +32,13 @@ $(document).ready(function() {
     $("img").click(function (e) { 
         //Obtenermos el src de la imagen a la que hemos hecho clic
         let src = $(this).attr("src");
+        let title = $(this).attr("title");
 
         //Una vez obtenido el src de la imagen, cambiamos el src de la etiqueta img que se encuentra en el modal
-        $(".modal-body img").attr("src", src);
+        $(".modal-body img").attr({
+            "src": src,
+            "title": title
+        });
         
     });
 });
