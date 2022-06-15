@@ -342,6 +342,14 @@ $navbar-toggler-focus-width: 0;
 
             font-size: 30px;
             color: $tittle1;
+
+            &:hover {
+                color: #BF8069;
+            }
+            
+            &:active {
+                color: #7a5142;
+            }
         }
     }
 }
@@ -891,7 +899,7 @@ $navbar-toggler-focus-width: 0;
     text-align: center;
     text-transform: capitalize;
     color: $tittle1;
-    margin: 30px 0;
+    margin: 30px 0;    
 }
 
 .news-layout {
@@ -931,6 +939,14 @@ $navbar-toggler-focus-width: 0;
                 .news__a {
                     text-decoration: none;
                     color: $tittle1;
+
+                    &:hover {
+                        color: #BF8069;
+                    }
+                    
+                    &:active {
+                        color: #7a5142;
+                    }
                 }
             }
 
@@ -1524,6 +1540,14 @@ $navbar-toggler-focus-width: 0;
                     color: $border1;
 
                     cursor: pointer;
+
+                    &:hover {
+                        color: #BF8069;
+                    }
+                    
+                    &:active {
+                        color: #7a5142;
+                    }
 
                     &::after {
                         content: "\2BC8";

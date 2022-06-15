@@ -12181,6 +12181,14 @@ fieldset:disabled .btn {
   color: #e5815d;
 }
 
+.news-container .row:nth-of-type(2) a:hover {
+  color: #BF8069;
+}
+
+.news-container .row:nth-of-type(2) a:active {
+  color: #7a5142;
+}
+
 @media screen and (max-width: 1200px) {
   .card {
     width: 270px;
@@ -12677,6 +12685,16 @@ fieldset:disabled .btn {
   color: #e5815d;
 }
 
+.news-layout .news-column .news-article .news__h2 .news__a:hover,
+.news-layout .news-column .news-article .news__h3 .news__a:hover {
+  color: #BF8069;
+}
+
+.news-layout .news-column .news-article .news__h2 .news__a:active,
+.news-layout .news-column .news-article .news__h3 .news__a:active {
+  color: #7a5142;
+}
+
 .news-layout .news-column .news-article .news__img-container,
 .news-layout .news-column .news-article .news__img-container-mini {
   width: 100%;
@@ -13156,6 +13174,14 @@ fieldset:disabled .btn {
   font-size: 14px;
   color: #ecb5a1;
   cursor: pointer;
+}
+
+.faq-container .faq-questions-container .faq-group .faq-question-container .faq-trigger:hover {
+  color: #BF8069;
+}
+
+.faq-container .faq-questions-container .faq-group .faq-question-container .faq-trigger:active {
+  color: #7a5142;
 }
 
 .faq-container .faq-questions-container .faq-group .faq-question-container .faq-trigger::after {
