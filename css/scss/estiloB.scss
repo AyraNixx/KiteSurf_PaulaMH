@@ -826,7 +826,7 @@ $navbar-toggler-focus-width: 0;
         .gallery-imgs-container {
 
             .img-container {
-                width: 90%;
+                width: 315px;
                 margin: 0 auto;
 
                 &:hover .img-content {
@@ -852,9 +852,6 @@ $navbar-toggler-focus-width: 0;
         /////////////////////////////////////////////////////////////////
         ///////////    PEDIR AYUDA A ANTONIO                ////////////
         .modal {
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
             .modal-dialog {
                 width: 266px;
