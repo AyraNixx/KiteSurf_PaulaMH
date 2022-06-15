@@ -338,9 +338,17 @@ $navbar-toggler-focus-width: 0;
         padding: 0;
 
         a {
+            padding-left: 17px;
+
             font-size: 30px;
             color: $tittle1;
         }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .card {
+        width: 270px;
     }
 }
 
@@ -480,7 +488,7 @@ $navbar-toggler-focus-width: 0;
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 920px) {
     #testimonials
     {
         width: 100%;

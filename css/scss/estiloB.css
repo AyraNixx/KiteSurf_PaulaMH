@@ -12176,8 +12176,15 @@ fieldset:disabled .btn {
 }
 
 .news-container .row:nth-of-type(2) a {
+  padding-left: 17px;
   font-size: 30px;
   color: #e5815d;
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    width: 270px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -12291,7 +12298,7 @@ fieldset:disabled .btn {
   height: 1.3rem;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 920px) {
   #testimonials {
     width: 100%;
   }
