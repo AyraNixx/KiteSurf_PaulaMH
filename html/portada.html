@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <script src="https://kit.fontawesome.com/8d125d2b91.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
 
 
@@ -20,13 +22,100 @@
         <!--CABECERA-->
         <header class="header">
             <div class="header__logo-container">
-                <a href="../html/portada.html"><h1 class="logo__h1">Mai Kai</h1></a>
-                    <h6 class="logo__h6">KiteSurfing</h6>
-                    <img src="../img/hojas.png" alt="" title="Imagen de unas hojas">
+                <a href="../html/portada.html">
+                    <h1 class="logo__h1">Mai Kai</h1>
+                </a>
+                <h6 class="logo__h6">KiteSurfing</h6>
+                <img src="../img/hojas.png" alt="" title="Imagen de unas hojas">
             </div>
         </header>
-        
-        
+
+
+        <header class="header-responsive sticky-top">
+            <nav class="navbar navbar-light" aria-label="First navbar example">
+                <div class="header__logo-container">
+                    <a href="../html/portada.html">
+                        <h1 class="logo__h1">Mai Kai</h1>
+                        <h6 class="logo__h6">KiteSurfing</h6>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <img src="../img/hojas.png" alt="" title="Imagen de unas hojas">
+                </div>
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarsExample01">
+                        <!--Logo-->
+                        <div class="nav-logo">
+                            <img src="../logo/logoSVG.svg" alt="Logo de ejemplo(no el final)" title="Logo de ejemplo"
+                                tooltip-dir="left">
+                        </div>
+                        <form>                            
+                            <button class="btn__search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
+                        </form>
+                        <ul class="nav__ul me-auto mb-2">
+                            <li class="nav__li dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="dropdown01"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Cursos</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                    <li><a class="dropdown-item" href="./Cursos.html">KiteSurfing</a></li>
+                                    <li><a class="dropdown-item" href="./Cursos.html">Surf</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__li">
+                                <a class="nav-link active" aria-current="page" href="./NotFound.html">Ejemplo2</a>
+                            </li>
+                            <li class="nav__li">
+                                <a class="nav-link active" aria-current="page" href="./Alojamiento.html">Alojamiento</a>
+                            </li>
+                            <li class="nav__li">
+                                <a class="nav-link active" aria-current="page" href="./Galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav__li">
+                                <a class="nav-link active" aria-current="page" href="./Noticias.html">Noticias</a>
+                            </li>
+                        </ul>
+                        <ul class="nav-ul">
+                            <li class="nav__li">
+                                <a href="../html/Contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="../html/FAQ.html">FAQ</a>
+                            </li>
+                        </ul>
+                        <!--Contactos-->
+                        <ul class="nav-ul info">
+                            <li class="info__ul-li">
+                                <i class="fa-solid fa-phone-flip"></i>
+                                <i>+34 123456789</i>
+                            </li>
+                            <li class="info__ul-li">
+                                <i class="fa-solid fa-envelope"></i>
+                                <i>maikaikitesurfing@gmail.com</i>
+                            </li>
+                        </ul>
+                        <ul class="ul__networks">
+                            <li>
+                                <a class="nav__networks fa-brands fa-twitter" href="https://twitter.com" title="Se abre en una nueva ventana/pestaña" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a class="nav__networks fa-brands fa-instagram" href="https://instagram.com" title="Se abre en una nueva ventana/pestaña" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a class="nav__networks fa-brands fa-facebook-f" href="https://facebook.com" title="Se abre en una nueva ventana/pestaña" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+
 
 
 
@@ -38,12 +127,12 @@
 
 
             <!--REPRODUCTOR DE MUSICA-->
-            <audio id="player" >
+            <audio id="player">
                 <!--Primera canción-->
                 <source src="../music/Cake_by_the_Ocean.mp3" type="audio/mp3">
             </audio>
-        
-        
+
+
             <div class="music-container">
                 <div class="player-logo">
                     <div>
@@ -83,7 +172,8 @@
 
                     <!--Logo-->
                     <div class="nav-logo">
-                        <img src="../logo/logoSVG.svg" alt="Logo de ejemplo(no el final)" title="Logo de ejemplo" tooltip-dir="left">
+                        <img src="../logo/logoSVG.svg" alt="Logo de ejemplo(no el final)" title="Logo de ejemplo"
+                            tooltip-dir="left">
                     </div>
 
                     <!--Caja de búsqueda-->
@@ -141,25 +231,28 @@
 
 
 
-            
+
 
             <!--    SECCIÓN EN LA QUE SE VAN A PONER LAS COSAS-->
             <section class="main__section">
                 <div class="section-container">
 
                     <!--LAYOUT-->
-                    <div class="layout__imgs-container">    
+                    <div class="layout__imgs-container">
                         <div class="tittle__h1-container">
                             <h1 class="tittle__h1">Comienza la aventura<span>&#160</span></h1>
                         </div>
                         <div class="tittle__h4-container">
                             <h4 class="tittle__h4">Cádiz<span>&#160</span></h4>
                         </div>
-                        <img class="layout__img" src="../img/kitesurfing1.jpg" alt="" title="Foto de personas haciendo kitesurfing">
-                        <img class="layout__img" src="../img/kitesurfing2.jpg" alt="" title="Foto de una chica surfeando">
-                        <img class="layout__img" src="../img/kitesurfing3.jpg" alt="" title="Foto de personas surfeando">
+                        <img class="layout__img" src="../img/kitesurfing1.jpg" alt=""
+                            title="Foto de personas haciendo kitesurfing">
+                        <img class="layout__img" src="../img/kitesurfing2.jpg" alt=""
+                            title="Foto de una chica surfeando">
+                        <img class="layout__img" src="../img/kitesurfing3.jpg" alt=""
+                            title="Foto de personas surfeando">
                         <div class="tittle__h3-container">
-                            <h3 class="tittle__h3">Escuela &nbsp; de &nbsp; KiteSurfing<span>&#160</span></h3>                    
+                            <h3 class="tittle__h3">Escuela &nbsp; de &nbsp; KiteSurfing<span>&#160</span></h3>
                         </div>
                     </div>
 
@@ -172,12 +265,14 @@
                     <!--DIV ACERCA DE...-->
                     <div class="information-container">
                         <div class="information__text-container">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut porro officiis voluptate cum suscipit, alias, repellat, nulla incidunt error impedit quidem corrupti deleniti nesciunt doloribus cumque ipsum eius odio debitis.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut porro officiis voluptate
+                                cum suscipit, alias, repellat, nulla incidunt error impedit quidem corrupti deleniti
+                                nesciunt doloribus cumque ipsum eius odio debitis.</p>
                         </div>
                         <div class="information__video-container">
                             <div class="information__video" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 <video loop muted autoplay playsinline>
-                                    <source src="../video/kitesurf.mp4"  type="video/mp4">
+                                    <source src="../video/kitesurf.mp4" type="video/mp4">
                                 </video>
                             </div>
                             <div class="information__video-text">
@@ -187,12 +282,17 @@
 
                         <!-- Modal -->
                         <!--ARREGLAR!!!!!!-->
-                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"  data-bs-dismiss="modal" aria-label="Close">
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"
+                            data-bs-dismiss="modal" aria-label="Close">
                             <div class="modal-dialog">
-                                <div class="modal-content" style="position: fixed; left: 0; right: 0; margin: auto; width: 60vw; height: auto;background: transparent; outline: none; border: none;">                              
-                                    <div class="modal-body" style="position: absolute; z-index: 20000; background: transparent;">
-                                        <video style="width: 100%; border: 2px splid white; outline: 3px solid salmon;" controls>
-                                            <source src="../video/kitesurf.mp4"  type="video/mp4">
+                                <div class="modal-content"
+                                    style="position: fixed; left: 0; right: 0; margin: auto; width: 60vw; height: auto;background: transparent; outline: none; border: none;">
+                                    <div class="modal-body"
+                                        style="position: absolute; z-index: 20000; background: transparent;">
+                                        <video style="width: 100%; border: 2px splid white; outline: 3px solid salmon;"
+                                            controls>
+                                            <source src="../video/kitesurf.mp4" type="video/mp4">
                                         </video>
                                     </div>
                                 </div>
@@ -200,7 +300,7 @@
                         </div>
                     </div>
 
-                    
+
                     <!--DIV DIVISOR-->
                     <div class="divider" style="margin-top: 20px; margin-bottom:20px;">
                         <h1 class="tittle__h1">Cur<span class="divider__span">sos</span></h1>
@@ -213,9 +313,12 @@
                                 <i class="fa-solid fa-circle-dot second"></i>
                                 <i class="fa-solid fa-circle-dot third"></i>
                             </div>
-                            <img src="../img/kitesurfing4.jpg" class="section-page__img active" alt="" title="Foto de una chica surfeando">
-                            <img src="../img/kitesurfing1.jpg" class="section-page__img" alt="" title="Foto de personas haciendo kitesurfing">
-                            <img src="../img/kitesurfing2.jpg" class="section-page__img" alt="" title="Foto de una chica practicando kitesurfing">
+                            <img src="../img/kitesurfing4.jpg" class="section-page__img active" alt=""
+                                title="Foto de una chica surfeando">
+                            <img src="../img/kitesurfing1.jpg" class="section-page__img" alt=""
+                                title="Foto de personas haciendo kitesurfing">
+                            <img src="../img/kitesurfing2.jpg" class="section-page__img" alt=""
+                                title="Foto de una chica practicando kitesurfing">
                             <div class="section-page__a-container">
                                 <a href="../html/Cursos.html">
                                     <i class="fa-solid fa-arrow-right-long"></i>
@@ -229,7 +332,10 @@
                                 —&nbsp;KiteSur<span class="section-page-course">fing</span>
                             </h1>
                             <div class="section-page__p-container">
-                                <p class="section-page__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempore fugiat iusto consequatur eius tempora voluptates dicta quaerat maiores nam recusandae et laboriosam, laudantium, quidem eveniet minima enim, minus inventore!</p>
+                                <p class="section-page__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Cupiditate tempore fugiat iusto consequatur eius tempora voluptates dicta quaerat
+                                    maiores nam recusandae et laboriosam, laudantium, quidem eveniet minima enim, minus
+                                    inventore!</p>
                             </div>
                         </div>
                     </div>
@@ -240,9 +346,12 @@
                                 <i class="fa-solid fa-circle-dot second"></i>
                                 <i class="fa-solid fa-circle-dot third"></i>
                             </div>
-                            <img src="../img/surf3.jpg" class="section-page__img active" alt="" title="Foto de una chico haciendo surf">
-                            <img src="../img/surf.jpg" class="section-page__img" alt="" title="Foto de unas tablas surf">
-                            <img src="../img/surf4.jpg" class="section-page__img" alt="" title="Foto de una tabla de surf cerca de la playa">
+                            <img src="../img/surf3.jpg" class="section-page__img active" alt=""
+                                title="Foto de una chico haciendo surf">
+                            <img src="../img/surf.jpg" class="section-page__img" alt=""
+                                title="Foto de unas tablas surf">
+                            <img src="../img/surf4.jpg" class="section-page__img" alt=""
+                                title="Foto de una tabla de surf cerca de la playa">
                             <div class="section-page__a-container">
                                 <a href="../html/Cursos.html">
                                     <i class="fa-solid fa-arrow-right-long"></i>
@@ -256,12 +365,15 @@
                                 —&nbsp;KiteSur<span class="section-page-course">fing</span>
                             </h1>
                             <div class="section-page__p-container">
-                                <p class="section-page__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempore fugiat iusto consequatur eius tempora voluptates dicta quaerat maiores nam recusandae et laboriosam, laudantium, quidem eveniet minima enim, minus inventore!</p>
+                                <p class="section-page__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Cupiditate tempore fugiat iusto consequatur eius tempora voluptates dicta quaerat
+                                    maiores nam recusandae et laboriosam, laudantium, quidem eveniet minima enim, minus
+                                    inventore!</p>
                             </div>
                         </div>
                     </div>
 
-                    
+
 
 
                     <!--DIV DIVISOR-->
@@ -276,39 +388,48 @@
                         <div class="row">
                             <div class="col-auto p-3">
                                 <div class="card" style="width: 18rem;">
-                                    <div class="card-body d-flex flex-column justify-content-center justify-content-evenly">
+                                    <div
+                                        class="card-body d-flex flex-column justify-content-center justify-content-evenly">
                                         <h1 class="card-title">Lorem ipsum dolor sit amet consectetur.</h1>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.<br><span><a href="../html/Noticia1.html">...</a></span></p>                                  
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.<br><span><a
+                                                    href="../html/Noticia1.html">...</a></span></p>
                                         <div class="release-container">
                                             <span>Autor</span>
                                             <span>Fecha de publicacion</span>
                                         </div>
                                     </div>
-                                </div>                              
+                                </div>
                             </div>
                             <div class="col-auto p-3">
                                 <div class="card" style="width: 18rem;">
-                                    <div class="card-body d-flex flex-column justify-content-center justify-content-evenly">
+                                    <div
+                                        class="card-body d-flex flex-column justify-content-center justify-content-evenly">
                                         <h1 class="card-title">Lorem ipsum dolor sit amet consectetur.</h1>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.<br><span><a href="../html/Noticia1.html">...</a></span></p>                                  
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.<br><span><a
+                                                    href="../html/Noticia1.html">...</a></span></p>
                                         <div class="release-container">
                                             <span>Autor</span>
                                             <span>Fecha de publicacion</span>
                                         </div>
                                     </div>
-                                </div>                              
+                                </div>
                             </div>
                             <div class="col-auto p-3">
                                 <div class="card" style="width: 18rem;">
-                                    <div class="card-body d-flex flex-column justify-content-center justify-content-evenly">
+                                    <div
+                                        class="card-body d-flex flex-column justify-content-center justify-content-evenly">
                                         <h1 class="card-title">Lorem ipsum dolor sit amet consectetur.</h1>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.<br><span><a href="../html/Noticia1.html">...</a></span></p>                                  
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.<br><span><a
+                                                    href="../html/Noticia1.html">...</a></span></p>
                                         <div class="release-container">
                                             <span>Autor</span>
                                             <span>Fecha de publicacion</span>
                                         </div>
                                     </div>
-                                </div>                              
+                                </div>
                             </div>
                         </div>
                         <div class="row">
@@ -327,37 +448,47 @@
 
                     <div class="testimonials-container">
                         <div id="testimonials" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-                            <div class="carousel-inner">                            
+                            <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="testimonials__author-container">
                                         <img src="../img/autor1.jpg" alt="" title="Foto del autor del comentario">
                                         <span class="testimonials__author">Nombre Apellido1 Apellido2</span>
                                     </div>
-                                    <p class="testimonials__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et impedit harum sint. Eaque quas molestias repellendus, est necessitatibus inventore in fugit asperiores assumenda voluptates ex obcaecati ducimus cum animi? Tempora.</p>                                
+                                    <p class="testimonials__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Et impedit harum sint. Eaque quas molestias repellendus, est necessitatibus
+                                        inventore in fugit asperiores assumenda voluptates ex obcaecati ducimus cum
+                                        animi? Tempora.</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="testimonials__author-container">
                                         <img src="../img/autor1.jpg" alt="" title="Foto del autor del comentario">
                                         <span class="testimonials__author">Nombre Apellido1 Apellido2</span>
                                     </div>
-                                    <p class="testimonials__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et impedit harum sint. Eaque quas molestias repellendus, est necessitatibus inventore in fugit asperiores assumenda voluptates ex obcaecati ducimus cum animi? Tempora.</p>                                
+                                    <p class="testimonials__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Et impedit harum sint. Eaque quas molestias repellendus, est necessitatibus
+                                        inventore in fugit asperiores assumenda voluptates ex obcaecati ducimus cum
+                                        animi? Tempora.</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="testimonials__author-container">
                                         <img src="../img/autor1.jpg" alt="" title="Foto del autor del comentario">
                                         <span class="testimonials__author">Nombre Apellido1 Apellido2</span>
                                     </div>
-                                    <p class="testimonials__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et impedit harum sint. Eaque quas molestias repellendus, est necessitatibus inventore in fugit asperiores assumenda voluptates ex obcaecati ducimus cum animi? Tempora.</p>                                
+                                    <p class="testimonials__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Et impedit harum sint. Eaque quas molestias repellendus, est necessitatibus
+                                        inventore in fugit asperiores assumenda voluptates ex obcaecati ducimus cum
+                                        animi? Tempora.</p>
                                 </div>
                             </div>
-                            <button class="carousel-control-next" type="button" data-bs-target="#testimonials" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <button class="carousel-control-next" type="button" data-bs-target="#testimonials"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             </button>
                         </div>
                     </div>
 
 
-                    
+
                 </div>
             </section>
 
@@ -368,9 +499,12 @@
             <!--    ZONA DE LAS REDES SOCIALES      -->
             <aside class="main__nav">
                 <div class="nav_networks-container">
-                    <a class="nav__networks fa-brands fa-twitter" href="https://twitter.com" title="Se abre en una nueva ventana/pestaña" target="_blank"></a>
-                    <a class="nav__networks fa-brands fa-instagram" href="https://instagram.com" title="Se abre en una nueva ventana/pestaña" target="_blank"></a>
-                    <a class="nav__networks fa-brands fa-facebook-f" href="https://facebook.com" title="Se abre en una nueva ventana/pestaña" target="_blank"></a>
+                    <a class="nav__networks fa-brands fa-twitter" href="https://twitter.com"
+                        title="Se abre en una nueva ventana/pestaña" target="_blank"></a>
+                    <a class="nav__networks fa-brands fa-instagram" href="https://instagram.com"
+                        title="Se abre en una nueva ventana/pestaña" target="_blank"></a>
+                    <a class="nav__networks fa-brands fa-facebook-f" href="https://facebook.com"
+                        title="Se abre en una nueva ventana/pestaña" target="_blank"></a>
                 </div>
             </aside>
 
@@ -388,7 +522,7 @@
                     <li class="ul__li"><a href="./NotFound.html">Acerca de nosotros</a></li>
                     <li class="ul__li"><a href="./NotFound.html">Condiciones</a></li>
                     <li class="ul__li"><a href="./NotFound.html">Política de privacidad</a></li>
-                </div>                
+                </div>
             </ul>
 
             <div class="footer__main-content">
@@ -401,9 +535,11 @@
                         <h6 class="logo__h6">KiteSurfing</h6>
                     </div>
                     <!--Pequeño texto acerca de quien son o frase conocida de la pagina-->
-                    <i class="footer-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem iure a necessitatibus consectetur aut minus illum voluptatum, ex consequatur accusantium eligendi enim! Asperiores nulla voluptate ex modi repellat sequi tempore.</i>
+                    <i class="footer-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem iure a
+                        necessitatibus consectetur aut minus illum voluptatum, ex consequatur accusantium eligendi enim!
+                        Asperiores nulla voluptate ex modi repellat sequi tempore.</i>
                 </div>
-                   <!--SEGUNDO DIV DEL FOOTER MAIN-->
+                <!--SEGUNDO DIV DEL FOOTER MAIN-->
 
                 <div class="footer__main-content-div2">
                     <h3 class="footer__h3">Informacion</h3>
@@ -439,7 +575,7 @@
                             <input type="email" class="footer__email" placeholder="Dirección de Email">
                             <input type="submit" class="footer__email-btn" value="Suscribirse">
                         </div>
-                    </div>                    
+                    </div>
                 </div>
             </div>
 
@@ -458,4 +594,5 @@
     <script src="../js/fotos.js"></script>
     <script src="../js/pie.js"></script>
 </body>
+
 </html>

@@ -4469,8 +4469,10 @@ fieldset:disabled .btn {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
 }
 
 .navbar > .container,
@@ -4562,8 +4564,8 @@ fieldset:disabled .btn {
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.25rem;
-          box-shadow: 0 0 0 0.25rem;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
 }
 
 .navbar-toggler-icon {
@@ -11976,6 +11978,127 @@ fieldset:disabled .btn {
      object-position: 50% 50%;
 }
 
+.header-responsive .navbar {
+  background: #fff;
+}
+
+.header-responsive .navbar .header__logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-responsive .navbar .header__logo-container a {
+  margin: 0 auto;
+  padding-left: 20%;
+}
+
+.header-responsive .navbar .header__logo-container .navbar-toggler {
+  border: none;
+}
+
+.header-responsive .navbar .container-fluid div .nav-logo, .header-responsive .navbar .container-sm div .nav-logo, .header-responsive .navbar .container-md div .nav-logo, .header-responsive .navbar .container-lg div .nav-logo, .header-responsive .navbar .container-xl div .nav-logo, .header-responsive .navbar .container-xxl div .nav-logo {
+  margin-top: 10px;
+}
+
+.header-responsive .navbar .container-fluid div .nav-logo img, .header-responsive .navbar .container-sm div .nav-logo img, .header-responsive .navbar .container-md div .nav-logo img, .header-responsive .navbar .container-lg div .nav-logo img, .header-responsive .navbar .container-xl div .nav-logo img, .header-responsive .navbar .container-xxl div .nav-logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.header-responsive .navbar .container-fluid div form, .header-responsive .navbar .container-sm div form, .header-responsive .navbar .container-md div form, .header-responsive .navbar .container-lg div form, .header-responsive .navbar .container-xl div form, .header-responsive .navbar .container-xxl div form {
+  padding: 1.8rem 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.header-responsive .navbar .container-fluid div form button, .header-responsive .navbar .container-sm div form button, .header-responsive .navbar .container-md div form button, .header-responsive .navbar .container-lg div form button, .header-responsive .navbar .container-xl div form button, .header-responsive .navbar .container-xxl div form button {
+  right: 10px;
+}
+
+.header-responsive .navbar .container-fluid div form input, .header-responsive .navbar .container-sm div form input, .header-responsive .navbar .container-md div form input, .header-responsive .navbar .container-lg div form input, .header-responsive .navbar .container-xl div form input, .header-responsive .navbar .container-xxl div form input {
+  padding-left: 0;
+  border: none;
+  border-bottom: 2px solid #ecb5a1;
+  border-radius: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #14604483;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header-responsive .navbar .container-fluid div form input::-webkit-input-placeholder, .header-responsive .navbar .container-sm div form input::-webkit-input-placeholder, .header-responsive .navbar .container-md div form input::-webkit-input-placeholder, .header-responsive .navbar .container-lg div form input::-webkit-input-placeholder, .header-responsive .navbar .container-xl div form input::-webkit-input-placeholder, .header-responsive .navbar .container-xxl div form input::-webkit-input-placeholder {
+  color: #14604483;
+}
+
+.header-responsive .navbar .container-fluid div form input:-ms-input-placeholder, .header-responsive .navbar .container-sm div form input:-ms-input-placeholder, .header-responsive .navbar .container-md div form input:-ms-input-placeholder, .header-responsive .navbar .container-lg div form input:-ms-input-placeholder, .header-responsive .navbar .container-xl div form input:-ms-input-placeholder, .header-responsive .navbar .container-xxl div form input:-ms-input-placeholder {
+  color: #14604483;
+}
+
+.header-responsive .navbar .container-fluid div form input::-ms-input-placeholder, .header-responsive .navbar .container-sm div form input::-ms-input-placeholder, .header-responsive .navbar .container-md div form input::-ms-input-placeholder, .header-responsive .navbar .container-lg div form input::-ms-input-placeholder, .header-responsive .navbar .container-xl div form input::-ms-input-placeholder, .header-responsive .navbar .container-xxl div form input::-ms-input-placeholder {
+  color: #14604483;
+}
+
+.header-responsive .navbar .container-fluid div form input::placeholder, .header-responsive .navbar .container-sm div form input::placeholder, .header-responsive .navbar .container-md div form input::placeholder, .header-responsive .navbar .container-lg div form input::placeholder, .header-responsive .navbar .container-xl div form input::placeholder, .header-responsive .navbar .container-xxl div form input::placeholder {
+  color: #14604483;
+}
+
+.header-responsive .navbar .container-fluid div ul, .header-responsive .navbar .container-sm div ul, .header-responsive .navbar .container-md div ul, .header-responsive .navbar .container-lg div ul, .header-responsive .navbar .container-xl div ul, .header-responsive .navbar .container-xxl div ul {
+  padding: 0 10px;
+  margin: 0;
+  list-style-type: none;
+}
+
+.header-responsive .navbar .container-fluid div ul li a, .header-responsive .navbar .container-sm div ul li a, .header-responsive .navbar .container-md div ul li a, .header-responsive .navbar .container-lg div ul li a, .header-responsive .navbar .container-xl div ul li a, .header-responsive .navbar .container-xxl div ul li a {
+  padding: 0;
+}
+
+.header-responsive .navbar .container-fluid div ul li .dropdown-menu, .header-responsive .navbar .container-sm div ul li .dropdown-menu, .header-responsive .navbar .container-md div ul li .dropdown-menu, .header-responsive .navbar .container-lg div ul li .dropdown-menu, .header-responsive .navbar .container-xl div ul li .dropdown-menu, .header-responsive .navbar .container-xxl div ul li .dropdown-menu {
+  border-radius: 0;
+  font-size: 12px;
+}
+
+.header-responsive .navbar .container-fluid div ul .info__ul-li:first-of-type, .header-responsive .navbar .container-sm div ul .info__ul-li:first-of-type, .header-responsive .navbar .container-md div ul .info__ul-li:first-of-type, .header-responsive .navbar .container-lg div ul .info__ul-li:first-of-type, .header-responsive .navbar .container-xl div ul .info__ul-li:first-of-type, .header-responsive .navbar .container-xxl div ul .info__ul-li:first-of-type {
+  padding-top: 5px;
+}
+
+.header-responsive .navbar .container-fluid div ul:last-of-type, .header-responsive .navbar .container-sm div ul:last-of-type, .header-responsive .navbar .container-md div ul:last-of-type, .header-responsive .navbar .container-lg div ul:last-of-type, .header-responsive .navbar .container-xl div ul:last-of-type, .header-responsive .navbar .container-xxl div ul:last-of-type {
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+}
+
+.header-responsive .navbar .container-fluid div .info, .header-responsive .navbar .container-sm div .info, .header-responsive .navbar .container-md div .info, .header-responsive .navbar .container-lg div .info, .header-responsive .navbar .container-xl div .info, .header-responsive .navbar .container-xxl div .info {
+  padding-top: 1rem;
+}
+
+.header-responsive .navbar .container-fluid div .ul__networks, .header-responsive .navbar .container-sm div .ul__networks, .header-responsive .navbar .container-md div .ul__networks, .header-responsive .navbar .container-lg div .ul__networks, .header-responsive .navbar .container-xl div .ul__networks, .header-responsive .navbar .container-xxl div .ul__networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 10px;
+  position: relative;
+}
+
+.header-responsive .navbar .container-fluid div .ul__networks li + li, .header-responsive .navbar .container-sm div .ul__networks li + li, .header-responsive .navbar .container-md div .ul__networks li + li, .header-responsive .navbar .container-lg div .ul__networks li + li, .header-responsive .navbar .container-xl div .ul__networks li + li, .header-responsive .navbar .container-xxl div .ul__networks li + li {
+  padding-left: 10px;
+}
+
+.header-responsive .navbar .container-fluid div .ul__networks::before, .header-responsive .navbar .container-sm div .ul__networks::before, .header-responsive .navbar .container-md div .ul__networks::before, .header-responsive .navbar .container-lg div .ul__networks::before, .header-responsive .navbar .container-xl div .ul__networks::before, .header-responsive .navbar .container-xxl div .ul__networks::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: .1em;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #f5a78a), color-stop(#f59fcb), to(#5de3b2));
+  background-image: linear-gradient(to right, #f5a78a 10%, #f59fcb, #5de3b2);
+  opacity: .4;
+}
+
 .card {
   position: relative;
   background: repeating-linear-gradient(-24deg, transparent, transparent 4px, #ceede2 0, #ceede2 5px);
@@ -12166,6 +12289,12 @@ fieldset:disabled .btn {
 #testimonials .carousel-control-next .carousel-control-next-icon {
   width: 1.3rem;
   height: 1.3rem;
+}
+
+@media screen and (max-width: 576px) {
+  #testimonials {
+    width: 100%;
+  }
 }
 
 .section-container .tittle-contact__h1 {
@@ -12440,6 +12569,7 @@ fieldset:disabled .btn {
 .gallery-container .modal .modal-dialog {
   width: 466px;
   height: 651px;
+  margin: 0 auto;
 }
 
 .gallery-container .modal .modal-dialog .modal-content {

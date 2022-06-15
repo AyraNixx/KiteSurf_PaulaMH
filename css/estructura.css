@@ -155,6 +155,34 @@
                     width: 165px;
                 }
 
+            .header-responsive
+            {
+                display: none;
+            }
+
+            @media screen and (max-width: 576px) 
+            {
+                .header
+                {
+                    display: none;
+                }
+
+                .header__logo-container
+                {
+                    width: 100%;
+
+                    text-align: center;
+
+                    position: relative;
+                    top: 0;
+                    z-index: 100;
+                }
+
+                .header-responsive
+                {
+                    display: block;
+                }
+            }
 
 
 
@@ -527,6 +555,14 @@
                 cursor: pointer;
             }
 
+            @media screen and (max-width: 576px) {
+
+                .main__nav
+                {
+                    display: none;
+                }   
+            }
+
         /*      DONDE VAN LOS CONTENIDOS           */
         .main__section
         {
@@ -537,10 +573,26 @@
             padding: 30px;
         }
 
+        @media screen and (max-width: 576px) {
+
+            .main__section
+            {
+                padding: 0;
+            }   
+        }
+
             .section-container
             {
                 background-color: #fcf9ee;
                 height: 100%;
+            }
+
+            @media screen and (max-width: 576px) {
+
+                .section-container
+                {
+                    width: 100%;
+                }   
             }
 
             .divider
@@ -598,7 +650,7 @@
                     margin: 0 auto;
                     text-align: center;
                     position: relative;
-                }
+                }              
                 
                     .tittle__h1-container, .tittle__h3-container, .tittle__h4-container
                     {
@@ -698,6 +750,34 @@
                             display: none;
                         }
                 }
+
+                @media screen and (max-width: 576px) {
+
+                    .layout__imgs-container
+                    {                        
+                        padding: 0;
+                    }
+
+                    .layout__imgs-container .tittle__h4-container
+                    {
+                        display: none;
+                    }
+                    
+                    .layout__img
+                    {
+                        width: 95%;
+                        margin-right: 0;
+
+                        position: relative;
+                    }
+
+                    .layout__img:last-of-type
+                    {
+                        display: none;
+                    }   
+
+                    
+                }
                 
 
                 .news-container
@@ -705,6 +785,21 @@
                     width: 70%;
                     margin: 0 auto;
                 }
+
+                @media screen and (max-width: 576px) {
+                    .news-container
+                    {
+                        width: 100%;
+                        padding: 0 10px;
+                    }
+
+                    .news-container .row:last-of-type
+                    {
+                        padding-right: 25px;
+                    }
+                }
+
+                
 
 
 
