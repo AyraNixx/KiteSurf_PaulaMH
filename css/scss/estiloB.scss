@@ -119,58 +119,46 @@ $navbar-toggler-focus-width: 0;
 //////////////////////////////////////////////////////////
 ///// //////       HEADER-RESPONSIVE          ///// ////// 
 //////////////////////////////////////////////////////////
-.header-responsive
-{
-    .navbar
-    {
+.header-responsive {
+    .navbar {
         background: #fff;
 
-        .header__logo-container
-        {
+        .header__logo-container {
             display: flex;
 
-            a 
-            {
+            a {
                 margin: 0 auto;
                 padding-left: 20%;
             }
 
-            .navbar-toggler
-            {
+            .navbar-toggler {
                 border: none;
             }
         }
 
-        .container-fluid
-        {
-            div 
-            {
-                .nav-logo
-                {
+        .container-fluid {
+            div {
+                .nav-logo {
                     margin-top: 10px;
 
-                    img 
-                    {
+                    img {
                         width: 100px;
                         height: 100px;
                     }
                 }
 
-                form
-                {
-                    padding: 1.8rem 10px ;
+                form {
+                    padding: 1.8rem 10px;
                     padding-bottom: 10px;
 
                     position: relative;
 
-                    button 
-                    {
+                    button {
                         right: 10px;
                     }
-                    
 
-                    input 
-                    {
+
+                    input {
                         padding-left: 0;
 
                         border: none;
@@ -183,65 +171,58 @@ $navbar-toggler-focus-width: 0;
 
                         box-shadow: none;
 
-                        &::placeholder
-                        {
+                        &::placeholder {
                             color: $links1;
                         }
                     }
                 }
-                ul 
-                {
+
+                ul {
                     padding: 0 10px;
                     margin: 0;
 
                     list-style-type: none;
 
-                    li
-                    {
-                        a 
-                        {
+                    li {
+                        a {
                             padding: 0;
                         }
 
-                        .dropdown-menu
-                        {
+                        .dropdown-menu {
                             border-radius: 0;
 
                             font-size: 12px;
-                            
+
                         }
                     }
 
-                    .info__ul-li:first-of-type
-                    {
+                    .info__ul-li:first-of-type {
                         padding-top: 5px;
                     }
 
-                    &:last-of-type
-                    {
+                    &:last-of-type {
                         padding-top: 1.8rem;
                         padding-bottom: 1.8rem;
                     }
                 }
 
-                .info{padding-top: 1rem;}
+                .info {
+                    padding-top: 1rem;
+                }
 
-                .ul__networks
-                {
+                .ul__networks {
                     display: flex;
                     justify-content: center;
-                    
+
                     padding: 0 10px;
 
                     position: relative;
 
-                    li + li 
-                    {
+                    li+li {
                         padding-left: 10px;
                     }
 
-                    &::before 
-                    {
+                    &::before {
                         content: '';
                         position: absolute;
                         width: 100%;
@@ -267,16 +248,12 @@ $navbar-toggler-focus-width: 0;
 //////////////////////////////////////////////////////////
 ///// //////       INFO MODAL                 ///// ////// 
 //////////////////////////////////////////////////////////
-.information-container
-{
-    .modal 
-    {
-        .modal-dialog
-        {
+.information-container {
+    .modal {
+        .modal-dialog {
             position: relative;
 
-            .modal-content
-            {
+            .modal-content {
                 width: 80vw;
 
                 margin: 0 auto;
@@ -288,15 +265,21 @@ $navbar-toggler-focus-width: 0;
                 right: 0;
 
 
-                .modal-header
-                {
+                .modal-header {
                     border-bottom: none;
                     padding-bottom: 0;
-                }
-                .modal-body
-                {
-                    video 
+                    margin-top: .5rem;
+
+                    .btn-close
                     {
+                        font-size: 14px;
+
+                        box-shadow: none;
+                    }
+                }
+
+                .modal-body {
+                    video {
                         width: 100%;
                     }
                 }
@@ -305,7 +288,38 @@ $navbar-toggler-focus-width: 0;
     }
 }
 
+@media screen and (max-width: 900px) {
+    .information-container {
+        .modal {
+            .modal-dialog {
+                .modal-content {
+                    width: 80vw;
 
+                    .modal-header {
+                        margin-top: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .information-container {
+        .modal {
+            .modal-dialog {
+                .modal-content {
+                    width: 100vw;
+
+                    .modal-header {
+                        margin-top: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
 
 //////////////////////////////////////////////////////////
 ///// //////                CARD              ///// ////// 
@@ -391,7 +405,7 @@ $navbar-toggler-focus-width: 0;
             &:hover {
                 color: #BF8069;
             }
-            
+
             &:active {
                 color: #7a5142;
             }
@@ -424,22 +438,19 @@ $navbar-toggler-focus-width: 0;
 //////////////////////////////////////////////////////////
 ///// //////                TESTIMONIALS      ///// ////// 
 //////////////////////////////////////////////////////////
-#testimonials
-{
+#testimonials {
     width: 70%;
 
     margin: 0 auto;
     margin-bottom: 40px;
 
-    .carousel-inner
-    {
+    .carousel-inner {
         display: flex;
         justify-content: center;
 
         padding-top: 20px;
-        
-        .carousel-item
-        {
+
+        .carousel-item {
             width: 80%;
 
             padding: 40px 60px;
@@ -447,8 +458,7 @@ $navbar-toggler-focus-width: 0;
 
             background: $marron4;
 
-            .testimonials__p
-            {
+            .testimonials__p {
                 width: 100%;
 
                 font-size: 14px;
@@ -458,16 +468,14 @@ $navbar-toggler-focus-width: 0;
                 hyphens: auto;
             }
 
-            .testimonials__author-container
-            {
-                display:flex;
+            .testimonials__author-container {
+                display: flex;
                 flex-direction: column;
                 align-items: center;
-                
+
                 margin-bottom: 20px;
 
-                img 
-                {
+                img {
                     @extend .img;
 
                     width: 60px;
@@ -479,15 +487,13 @@ $navbar-toggler-focus-width: 0;
 
                 }
 
-                .testimonials__author
-                {
+                .testimonials__author {
                     font-size: .8em;
                     color: $links1;
                 }
             }
 
-            &::before
-            {
+            &::before {
                 content: "";
 
                 width: 150px;
@@ -500,11 +506,10 @@ $navbar-toggler-focus-width: 0;
                 position: absolute;
                 top: -60px;
                 left: -60px;
-                
+
             }
 
-            &::after
-            {
+            &::after {
                 content: "";
 
                 width: 70px;
@@ -521,8 +526,7 @@ $navbar-toggler-focus-width: 0;
         }
     }
 
-    .carousel-control-next 
-    {
+    .carousel-control-next {
         width: fit-content;
         height: fit-content;
 
@@ -533,8 +537,7 @@ $navbar-toggler-focus-width: 0;
 
         border-radius: 50%;
 
-        .carousel-control-next-icon
-        {
+        .carousel-control-next-icon {
             width: 1.3rem;
             height: 1.3rem;
         }
@@ -542,8 +545,7 @@ $navbar-toggler-focus-width: 0;
 }
 
 @media screen and (max-width: 920px) {
-    #testimonials
-    {
+    #testimonials {
         width: 100%;
     }
 }
@@ -851,7 +853,7 @@ $navbar-toggler-focus-width: 0;
     }
 
     .modal {
-        
+
         .modal-dialog {
 
             width: 466px;
@@ -944,7 +946,7 @@ $navbar-toggler-focus-width: 0;
     text-align: center;
     text-transform: capitalize;
     color: $tittle1;
-    margin: 30px 0;    
+    margin: 30px 0;
 }
 
 .news-layout {
@@ -988,7 +990,7 @@ $navbar-toggler-focus-width: 0;
                     &:hover {
                         color: #BF8069;
                     }
-                    
+
                     &:active {
                         color: #7a5142;
                     }
@@ -1589,7 +1591,7 @@ $navbar-toggler-focus-width: 0;
                     &:hover {
                         color: #BF8069;
                     }
-                    
+
                     &:active {
                         color: #7a5142;
                     }
@@ -2647,26 +2649,26 @@ $navbar-toggler-focus-width: 0;
 @media screen and (max-width: 600px) {
 
     .accommodation-container {
-        .accommodation-content-container,  .accommodation-content-container:nth-last-of-type(even) {
+
+        .accommodation-content-container,
+        .accommodation-content-container:nth-last-of-type(even) {
 
             .accommodation__img-container {
                 width: 200px;
                 height: 250px;
 
-                div 
-                {
+                div {
                     left: 20px;
                 }
             }
 
-            .content-container{
+            .content-container {
 
                 padding-left: 0;
 
                 .accommodation-include {
 
-                    .accommodation__h5
-                    {
+                    .accommodation__h5 {
                         padding-left: 0;
 
                         text-align: justify;
