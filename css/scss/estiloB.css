@@ -12099,6 +12099,29 @@ fieldset:disabled .btn {
   opacity: .4;
 }
 
+.information-container .modal .modal-dialog {
+  position: relative;
+}
+
+.information-container .modal .modal-dialog .modal-content {
+  width: 80vw;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.information-container .modal .modal-dialog .modal-content .modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.information-container .modal .modal-dialog .modal-content .modal-body video {
+  width: 100%;
+}
+
 .card {
   position: relative;
   background: repeating-linear-gradient(-24deg, transparent, transparent 4px, #ceede2 0, #ceede2 5px);

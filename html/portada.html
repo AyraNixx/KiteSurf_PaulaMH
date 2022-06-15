@@ -51,7 +51,7 @@
                             <img src="../logo/logoSVG.svg" alt="Logo de ejemplo(no el final)" title="Logo de ejemplo"
                                 tooltip-dir="left">
                         </div>
-                        <form>                            
+                        <form>
                             <button class="btn__search"><i class="fa-solid fa-magnifying-glass"></i></button>
                             <input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
                         </form>
@@ -98,13 +98,16 @@
                         </ul>
                         <ul class="ul__networks">
                             <li>
-                                <a class="nav__networks fa-brands fa-twitter" href="https://twitter.com" title="Se abre en una nueva ventana/pestaña" target="_blank"></a>
+                                <a class="nav__networks fa-brands fa-twitter" href="https://twitter.com"
+                                    title="Se abre en una nueva ventana/pestaña" target="_blank"></a>
                             </li>
                             <li>
-                                <a class="nav__networks fa-brands fa-instagram" href="https://instagram.com" title="Se abre en una nueva ventana/pestaña" target="_blank"></a>
+                                <a class="nav__networks fa-brands fa-instagram" href="https://instagram.com"
+                                    title="Se abre en una nueva ventana/pestaña" target="_blank"></a>
                             </li>
                             <li>
-                                <a class="nav__networks fa-brands fa-facebook-f" href="https://facebook.com" title="Se abre en una nueva ventana/pestaña" target="_blank"></a>
+                                <a class="nav__networks fa-brands fa-facebook-f" href="https://facebook.com"
+                                    title="Se abre en una nueva ventana/pestaña" target="_blank"></a>
                             </li>
                         </ul>
                     </div>
@@ -269,7 +272,7 @@
                                 nesciunt doloribus cumque ipsum eius odio debitis.</p>
                         </div>
                         <div class="information__video-container">
-                            <div class="information__video" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <div class="information__video" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <video loop muted autoplay playsinline>
                                     <source src="../video/kitesurf.mp4" type="video/mp4">
                                 </video>
@@ -278,19 +281,17 @@
                                 <span> Ver vídeo </span>
                             </div>
                         </div>
-
                         <!-- Modal -->
-                        <!--ARREGLAR!!!!!!-->
-                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"
-                            data-bs-dismiss="modal" aria-label="Close">
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
                             <div class="modal-dialog">
-                                <div class="modal-content"
-                                    style="position: fixed; left: 0; right: 0; margin: auto; width: 60vw; height: auto;background: transparent; outline: none; border: none;">
-                                    <div class="modal-body"
-                                        style="position: absolute; z-index: 20000; background: transparent;">
-                                        <video style="width: 100%; border: 2px splid white; outline: 3px solid salmon;"
-                                            controls>
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <video controls style="width: 100%;">
                                             <source src="../video/kitesurf.mp4" type="video/mp4">
                                         </video>
                                     </div>
@@ -306,7 +307,7 @@
                     </div>
 
                     <div class="section-page-container">
-                        <div class="section-page__img-container">                           
+                        <div class="section-page__img-container">
                             <div class="section-page__img-options" id="cursoKite">
                                 <i class="fa-solid fa-circle-dot first"></i>
                                 <i class="fa-solid fa-circle-dot second"></i>

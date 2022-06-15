@@ -262,6 +262,51 @@ $navbar-toggler-focus-width: 0;
 
 
 
+
+
+//////////////////////////////////////////////////////////
+///// //////       INFO MODAL                 ///// ////// 
+//////////////////////////////////////////////////////////
+.information-container
+{
+    .modal 
+    {
+        .modal-dialog
+        {
+            position: relative;
+
+            .modal-content
+            {
+                width: 80vw;
+
+                margin: 0 auto;
+
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+
+
+                .modal-header
+                {
+                    border-bottom: none;
+                    padding-bottom: 0;
+                }
+                .modal-body
+                {
+                    video 
+                    {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
 //////////////////////////////////////////////////////////
 ///// //////                CARD              ///// ////// 
 //////////////////////////////////////////////////////////
