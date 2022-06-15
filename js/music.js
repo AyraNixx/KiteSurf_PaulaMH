@@ -48,6 +48,10 @@ document.getElementById("player").addEventListener("ended", function(){
     }
 });
 
+$(".information__video").click(function () {
+    document.getElementById('player').pause();
+})
+
 /*
 $(window).on("scroll", function () {
     if( $(window).scrollTop() > ($(".footer").offset().top - (($(window).height() - $(".footer").height()))))
