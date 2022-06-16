@@ -37,6 +37,7 @@ $(document).ready(function() {
         //Una vez obtenido el src de la imagen, cambiamos el src de la etiqueta img que se encuentra en el modal
         $(".modal-body img").attr({
             "src": src,
+            "alt": title,
             "title": title
         });
         
