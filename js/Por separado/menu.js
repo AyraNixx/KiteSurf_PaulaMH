@@ -1,5 +1,5 @@
 $("#nav__menu").click(() => {
-    $(".nav-showed").css("z-index", 300).delay(40).queue(function() {
+    $(".nav-showed").css("z-index", 700).delay(40).queue(function() {
         $(this).width(370);
         $(this).dequeue();
     })

@@ -216,7 +216,7 @@ body {
     position: fixed;
     right: 3.55rem;
     bottom: 2.5rem;
-    z-index: 1000;
+    z-index: 500;
 }
 
 @media screen and (max-width: 750px) {
@@ -328,16 +328,22 @@ body {
 /*MENU LATERAL*/
 .nav {
     display: block;
+
     height: 100%;
     width: 0;
+    
+    padding-top: 60px;
+
     position: fixed;
     top: 0;
     left: 0;
+
     background: #fff;
+
     border-right: 5px solid #e5815d;
+
     overflow-x: hidden;
     transition: 0.4s;
-    padding-top: 60px;
 }
 
 .btn__close {
@@ -866,11 +872,13 @@ body {
 
     background: #fff;
 
+    border-left: 5px solid rgb(229, 129, 93);
+
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
 
     position: relative;
-    z-index: 2000;
+    z-index: 600;
 }
 
 #btn__footer {
